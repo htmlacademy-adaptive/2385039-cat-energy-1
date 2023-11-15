@@ -1,0 +1,46 @@
+.main-container {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+}
+
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  padding-top: 27px;
+  padding-right: 35px;
+  padding-left: 36px;
+  margin: 0;
+}
+
+.main-container__title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  width: 249px;
+}
+
+.hero__slogan {
+  color: #ffffff;
+  font-family: "Oswald", "Areal", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 198px;
+}
+
+.hero__choose-program {
+  width: 244px;
+  padding: 10px 44px;
+}
+
