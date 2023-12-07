@@ -2,16 +2,49 @@
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  /*display: none;*/
 }
 
 .main-nav__wrapper {
   margin: 0;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+
 }
 
 .site-list__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   list-style-type: none;
 }
 
+.site-list__link {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: uppercase;
+}
