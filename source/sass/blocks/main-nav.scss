@@ -2,10 +2,8 @@
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  width: 320px;
   display: flex;
   flex-direction: column;
-  /*display: none;*/
 }
 
 .main-nav__wrapper {
@@ -18,7 +16,7 @@
   position: relative;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: 768px) {
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
@@ -31,7 +29,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: 1440px) {
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
@@ -75,4 +73,3 @@
   line-height: 20px;
   text-transform: uppercase;
 }
-
