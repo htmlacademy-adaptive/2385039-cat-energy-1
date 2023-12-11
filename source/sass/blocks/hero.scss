@@ -1,32 +1,9 @@
-.main-container {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-}
-
 .hero {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 135px);
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
-}
-
-.main-container__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin-top: 27px;
-  margin-bottom: 25px;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Oswald", "Areal", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
   width: 320px;
 }
 
@@ -37,9 +14,8 @@
   padding-right: 62px;
   margin-bottom: 29px;
   color: #ffffff;
-  font-family: "Oswald", "Areal", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;

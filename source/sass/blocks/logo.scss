@@ -10,8 +10,17 @@
   margin-left: 20px;
 }
 
-.logo__text {
+.logo__text .main-header {
   width: 101px;
   height: 18px;
   margin-left: 56px;
+}
+
+.logo__text .main-footer {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 128px;
+  height: 24px;
+  display: flex;
 }
