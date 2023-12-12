@@ -1,0 +1,25 @@
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.logo__icon {
+  margin-top: 13px;
+  margin-left: 20px;
+  width: 33px;
+  height: 38px;
+}
+
+.logo__text .main-header {
+  margin-left: 56px;
+  width: 101px;
+  height: 18px;
+}
+
+.logo__text .main-footer {
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 128px;
+  height: 24px;
+  display: flex;
+}

@@ -1,0 +1,27 @@
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.social__list {
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: none;
+  width: 132px;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  gap: 24px;
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+  width: 28px;
+}
+
+.social__link {
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  min-height: 22px;
+}
