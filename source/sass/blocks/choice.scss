@@ -4,7 +4,7 @@
 }
 
 .choice__wrapper {
-  margin: 20px;
+  margin: 20px auto;
   padding: 0;
   width: 280px;
   display: flex;
@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
@@ -21,9 +22,11 @@
 
 .choice__item {
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-bottom: 18px;
+  padding: 0 20px 18px 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   background-color: #f2f2f2;
 }
 
@@ -37,13 +40,15 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .choice__description {
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
-  padding-right: 33px;
+  width: 227px;
   color: #444444;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -57,7 +62,79 @@
   padding: 0;
   text-decoration: none;
   color: #000000;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .choice__wrapper {
+    margin: 0 auto 45px;
+    width: 708px;
+  }
+
+  .choice__list {
+    gap: 30px;
+  }
+
+  .choice__item {
+    margin: 0;
+    padding: 0 0 57px 52px;
+    width: 708px;
+  }
+
+  .choice__title {
+    margin-top: 77px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    justify-content: start;
+  }
+
+  .choice__description {
+    margin-bottom: 52px;
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .choice__link {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choice__wrapper {
+    margin: 82px auto 71px;
+    width: 1220px;
+  }
+
+  .choice__list {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+
+  .choice__item {
+    margin: 0;
+    padding: 0 0 59px 52px;
+    width: 570px;
+  }
+
+  .choice__title {
+    margin-bottom: 73px;
+  }
+
+  .choice__description {
+    margin-bottom: 27px;
+    width: 457px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .choice__link {
+    margin-top: 0;
+    font-size: 20px;
+  }
 }
