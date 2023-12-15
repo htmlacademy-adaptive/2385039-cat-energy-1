@@ -89,3 +89,28 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .stats__wrapper {
+    margin: 45px auto 0;
+    padding: 0;
+    width: 708px;
+    background-color: #ffffff;
+  }
+
+  .stats__title {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .stats__info {
+    margin: 0 auto;
+    margin-bottom: 55px;
+    width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

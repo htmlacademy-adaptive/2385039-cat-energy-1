@@ -10,16 +10,23 @@
   height: 38px;
 }
 
-.logo__text .main-header {
+.logo__text-header {
   margin-left: 56px;
   width: 101px;
   height: 18px;
+  display: flex;
 }
 
-.logo__text .main-footer {
+.logo__text-footer {
   margin: 0 auto 20px;
   padding: 0;
   width: 128px;
   height: 24px;
   display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text-footer {
+    margin: 0;
+  }
 }

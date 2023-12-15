@@ -40,3 +40,39 @@
   height: 362px;
   object-fit: contain;
 }
+
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 60px 70px;
+    width: 768px;
+    grid-template-columns: 163px 157px;
+    justify-content: space-between;
+  }
+
+  .contacts__slogan {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    width: 157px;
+    text-align: right;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    margin-top: 95px;
+    margin-left: 110px;
+    margin-bottom: 106px;
+    padding: 60px 78px;
+    width: 565px;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+}
