@@ -11,6 +11,7 @@
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   color: #000000;
   font-size: 36px;
@@ -20,13 +21,11 @@
 
 .advantages__list {
   margin: 0;
-  margin-top: 40px;
   padding: 0;
   list-style-type: none;
-  row-gap: 26px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .advantages__item {
@@ -55,10 +54,10 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 
   .advantages__list {
-    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 137px;
@@ -66,8 +65,8 @@
   }
 
   .advantages__item {
-    margin-top: 151px;
-    margin-bottom: 57px;
+    padding-top: 151px;
+    padding-bottom: 57px;
     max-width: 245px;
   }
 
@@ -84,8 +83,8 @@
   }
 
   .advantages__list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 0;
   }

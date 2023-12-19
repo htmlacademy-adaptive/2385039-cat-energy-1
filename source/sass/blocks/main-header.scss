@@ -3,3 +3,37 @@
   margin: 0;
   padding: 0;
 }
+
+.main-header__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    display: grid;
+    grid-template-columns: 176px 438px;
+    gap: 94px;
+    width: 708px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    display: grid;
+    grid-template-columns: 202px 475px;
+    gap: 0;
+    width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 82px;
+    padding: 55px 110px 0 110px;
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+  }
+}
