@@ -25,6 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
+    margin: 0;
     display: grid;
     grid-template-columns: 202px 475px;
     gap: 0;
