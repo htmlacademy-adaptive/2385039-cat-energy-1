@@ -16,12 +16,25 @@
 .social__item {
   margin: 0;
   padding: 0;
-  width: 28px;
+  max-height: 22px;
 }
 
 .social__link {
   margin: 0;
   padding: 0;
   width: 28px;
-  min-height: 22px;
+}
+
+.social__link--v,
+.social__link--youtube,
+.social__link--telegram {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 0;
+  }
 }

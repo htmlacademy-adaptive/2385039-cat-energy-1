@@ -8,3 +8,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
