@@ -7,9 +7,9 @@
 .main-header__wrapper {
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  width: 280px;
+  /*max-height: 65px;*/
 }
+
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
