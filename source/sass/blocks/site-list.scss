@@ -13,6 +13,7 @@
   padding-bottom: 24px;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .site-list__item {
@@ -34,16 +35,20 @@
   .site-list a {
     border: none;
     padding: 0;
-    width: 436px;
-    display: grid;
-    grid-template-columns: repeat(3fr);
-    grid-column: 33px;
+    width: auto;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .site-list__item {
     margin: 0;
-    padding: 13px 0;
+    padding: 0;
     list-style-type: none;
+  }
+
+  .site-list__item--current {
+    border-bottom: 2px solid #68b738;
   }
 
   .site-list__link {

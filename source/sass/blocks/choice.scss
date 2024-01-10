@@ -91,13 +91,14 @@
 .choice__link {
   margin: 0;
   margin-top: 15px;
-  padding: 0;
+  padding: 4px 0;
   text-decoration: none;
   color: #000000;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  max-width: 140px;
 }
 
 .choice__link::after {
@@ -107,7 +108,8 @@
   height: 10px;
   background-image: url("../img/choice/icon-arrow.svg");
   background-repeat: no-repeat;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: auto;
   margin-left: 15px;
 }
@@ -124,8 +126,22 @@
 
   .choice__item {
     margin: 0;
-    padding: 0 0 57px 52px;
+    padding: 0 0 53px 52px;
     width: 708px;
+  }
+
+  .choice__item--weight-loss::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
+  }
+
+  .choice__item--weight-gain::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
   }
 
   .choice__title {
@@ -134,6 +150,7 @@
     font-size: 36px;
     line-height: 36px;
     justify-content: start;
+    padding-left: 0;
   }
 
   .choice__description {
@@ -141,11 +158,16 @@
     width: 340px;
     font-size: 16px;
     line-height: 24px;
+    border: none;
   }
 
   .choice__link {
     margin-top: 0;
     font-size: 20px;
+  }
+
+  .choice__link::after {
+    margin-left: 25px;
   }
 }
 

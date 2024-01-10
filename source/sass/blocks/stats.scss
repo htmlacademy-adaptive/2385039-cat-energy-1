@@ -58,6 +58,7 @@
   content: "";
   position: absolute;
   background-image: url("../img/stats/border-line.svg");
+  background-repeat: no-repeat;
   width: 124px;
   height: 56px;
 }
@@ -114,9 +115,9 @@
 @media (min-width: $tablet-width) {
   .stats__wrapper {
     margin: 45px auto 0;
-    padding: 0;
-    width: 708px;
-    background-color: #ffffff;
+    padding: 0 30px;
+    width: 768px;
+    /*background: linear-gradient(to top, #eaeaea 462px, #ffffff 574px);*/
   }
 
   .stats__title {
@@ -136,18 +137,19 @@
   }
 
   .stats__list {
-    margin: 0;
     margin-bottom: 99px;
-    padding: 0;
     width: 367px;
-    display: grid;
     grid-template-columns: repeat(2, 162px);
     column-gap: 43px;
-    justify-content: start;
   }
 
   .stats__item {
     margin: 0;
+  }
+
+  .stats__item::before {
+    width: 162px;
+    height: 77px;
   }
 
   .stats__number {
@@ -174,7 +176,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 174px;
-    order: 0;
+  }
+
+  .stats-sliders {
+    justify-content: center;
   }
 }
 
