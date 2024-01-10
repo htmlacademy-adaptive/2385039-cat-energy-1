@@ -30,9 +30,51 @@
 
 .advantages__item {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   max-width: 200px;
 }
+
+.advantages__item--icon-leaf::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/advantages/advantage-1.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages__item--icon-solute::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/advantages/advantage-2.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages__item--icon-diet::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/advantages/advantage-3.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages__item--icon-time::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/advantages/advantage-4.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
 
 .advantages__description {
   margin: 0;
