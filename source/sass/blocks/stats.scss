@@ -91,6 +91,7 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 46px;
   color: #000000;
   text-align: center;
   font-size: 14px;
@@ -117,7 +118,8 @@
     margin: 45px auto 0;
     padding: 0 30px;
     width: 768px;
-    /*background: linear-gradient(to top, #eaeaea 462px, #ffffff 574px);*/
+    background: linear-gradient(to bottom, #ffffff 574px, #eaeaea 462px);
+    min-height: 1081px;
   }
 
   .stats__title {
@@ -134,6 +136,13 @@
     width: 708px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .stats__list-wrapper {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 768px;
   }
 
   .stats__list {
@@ -169,6 +178,8 @@
 
   .stats__span {
     margin: 0;
+    margin-left: 167px;
+    margin-top: 11px;
     padding: 0;
     text-align: end;
     font-size: 20px;

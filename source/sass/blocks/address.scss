@@ -3,3 +3,13 @@
   padding: 0;
   color: #444444;
 }
+
+.address p {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .address p {
+    margin-top: 19px;
+  }
+}
