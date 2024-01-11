@@ -138,10 +138,10 @@
   }
 
   .choice__item--weight-gain::before {
-    width: 200px;
+    width: 268px;
     height: 200px;
     top: 92px;
-    left: 445px;
+    left: 416px;
   }
 
   .choice__title {
@@ -185,23 +185,32 @@
 
   .choice__item {
     margin: 0;
-    padding: 0 0 59px 52px;
+    padding: 0 0 55px 52px;
     width: 570px;
+  }
+
+  .choice__item--weight-loss::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .choice__item--weight-gain::before {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
   }
 
   .choice__title {
     margin-bottom: 73px;
+    padding-left: 162px;
   }
 
   .choice__description {
-    margin-bottom: 27px;
+    margin-bottom: 23px;
+    padding: 0;
     width: 457px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .choice__link {
-    margin-top: 0;
-    font-size: 20px;
   }
 }

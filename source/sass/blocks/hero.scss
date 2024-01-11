@@ -65,10 +65,12 @@
 
   .hero__image {
     margin: 0;
-    margin-top: -29px;
+    margin-top: -83px;
+    margin-left: -90px;
     width: 708px;
     height: 608px;
     order: 1;
+    outline: 1px solid rgb(255, 0, 0);
   }
 
   .hero__choose-program {
@@ -86,6 +88,8 @@
     width: 1440px;
     padding-left: 190px;
     background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+    position: relative;
+    margin-bottom: 82px;
   }
 
   .hero__slogan {
@@ -94,7 +98,7 @@
     line-height: 20px;
     width: 373px;
     padding: 0;
-    order: 1;
+    margin-bottom: 51px;
   }
 
   .hero__image {
@@ -102,6 +106,9 @@
     height: 499px;
     display: block;
     order: 3;
+    position: absolute;
+    margin-top: 143px;
+    margin-left: 557px;
   }
 
   .hero__choose-program {

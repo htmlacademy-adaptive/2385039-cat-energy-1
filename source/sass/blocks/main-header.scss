@@ -1,5 +1,4 @@
 .main-header {
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -25,6 +24,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    position: relative;
+  }
+
+  .main-header::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hero/index-background-desktop.png");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
   .main-header__wrapper {
     margin: 0;
     display: grid;
