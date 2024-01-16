@@ -1,6 +1,6 @@
 .main-nav__toggle {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   display: block;
   margin: 0;
   padding: 0;
@@ -9,16 +9,9 @@
   top: 20px;
   right: 20px;
   width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 9px 0 0 #000000, 0 18px 0 0 #000000;
-}
-
-.main-nav__toggle:active {
-  background-color: fade(#000000, 30%);
-  box-shadow:
-    0 8px 0 0 fade(#000000, 30%),
-    0 16px 0 0 fade(#000000, 30%);
+  height: 24px;
+  background-image: url("../img/main-nav/nav__toggle-close.svg");
+  background-repeat: no-repeat;
 }
 
 
