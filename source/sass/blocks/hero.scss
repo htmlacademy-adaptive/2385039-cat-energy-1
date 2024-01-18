@@ -14,17 +14,6 @@
   position: relative;
 }
 
-.hero__wrapper::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/hero/index-background-desktop.png");
-  background-repeat: no-repeat;
-  width: 720px;
-  height: 694px;
-  top: -143px;
-  right: 0;
-  background-color: rgb(126, 204, 204);
-}
 
 .hero__slogan {
   margin: 0;
@@ -104,6 +93,18 @@
     background: none;
     margin-bottom: 82px;
     position: relative;
+  }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hero/index-background-desktop.png");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    top: -143px;
+    right: 0;
+    background-size: cover;
   }
 
   .hero__slogan {
