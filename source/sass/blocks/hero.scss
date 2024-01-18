@@ -10,6 +10,20 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 135px);
+  z-index: 0;
+  position: relative;
+}
+
+.hero__wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/hero/index-background-desktop.png");
+  background-repeat: no-repeat;
+  width: 720px;
+  height: 694px;
+  top: -143px;
+  right: 0;
+  background-color: rgb(126, 204, 204);
 }
 
 .hero__slogan {
@@ -105,7 +119,6 @@
     width: 552px;
     height: 499px;
     display: block;
-    order: 3;
     position: absolute;
     top: 72px;
     right: 331px;
