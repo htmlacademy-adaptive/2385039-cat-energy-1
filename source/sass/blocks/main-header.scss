@@ -26,6 +26,7 @@
 @media (min-width: $desktop-width) {
   .main-header {
     position: relative;
+    /*background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50% #ffffff 50%, rgba(104, 183, 56, 0.85) 100%);*/
   }
 
   .main-header::before {
@@ -40,15 +41,21 @@
     z-index: -1;
   }
 
+  .main-header::after {
+    background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50% #ffffff 50%, rgba(104, 183, 56, 0.85) 100%);
+  }
+
   .main-header__wrapper {
     margin: 0;
+    margin-bottom: 29px;
+    padding: 55px 110px;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 202px 475px;
     gap: 0;
     width: 1440px;
+    max-height: 114px;
     align-items: center;
     justify-content: space-between;
-    padding: 55px 110px 82px 110px;
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
   }
 }

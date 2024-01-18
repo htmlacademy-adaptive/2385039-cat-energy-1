@@ -87,9 +87,9 @@
   .hero__wrapper {
     width: 1440px;
     padding-left: 190px;
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
-    position: relative;
+    background: none;
     margin-bottom: 82px;
+    position: relative;
   }
 
   .hero__slogan {
@@ -102,13 +102,13 @@
   }
 
   .hero__image {
-    width: 522px;
+    width: 552px;
     height: 499px;
     display: block;
     order: 3;
     position: absolute;
-    margin-top: 143px;
-    margin-left: 557px;
+    top: 72px;
+    right: 331px;
   }
 
   .hero__choose-program {

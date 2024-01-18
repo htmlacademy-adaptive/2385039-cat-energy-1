@@ -31,19 +31,12 @@
     display: none;
   }
 
-  /*.main-nav__wrapper {
-    display: grid;
-    grid-template-columns: 64px repeat(2, 154px);
-    gap: 33px;
-    justify-content: start;
-    width: 436px;
-  }*/
-
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 33px;
     width: 436px;
+    flex-wrap: wrap;
   }
 }
 
@@ -60,9 +53,6 @@
   }
 
   .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 475px;
   }
 }

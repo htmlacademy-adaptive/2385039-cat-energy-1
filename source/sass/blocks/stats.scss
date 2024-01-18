@@ -154,7 +154,6 @@
     margin: 0;
   }
 
-
   .stats__number {
     padding-top: 15px;
     padding-bottom: 11px;
@@ -187,6 +186,8 @@
   .stats-sliders {
     margin: 0 auto;
     margin-top: 99px;
+    margin-bottom: 101px;
+    padding: 0;
     width: 560px;
     height: 512px;
     justify-content: center;
@@ -205,12 +206,11 @@
   }
 
   .stats__title {
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
 
   .stats__info {
-    margin: 0;
-    margin-bottom: 75px;
+    margin: 70px 0 69px 0;
     width: 436px;
   }
 
@@ -227,8 +227,9 @@
   }
 
   .stats-sliders {
+    margin: 0;
     position: absolute;
-    bottom: 85px;
+    top: 0;
     right: 110px;
     padding: 0;
     outline: 1px solid rgb(255, 0, 0);

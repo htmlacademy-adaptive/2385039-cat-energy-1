@@ -59,14 +59,14 @@
 
 
 @media (min-width: $desktop-width) {
-  .site-list__link {
-    color: #ffffff;
-  }
-
   .site-list a {
     background-color: inherit;
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+
+  .site-list__link {
+    color: #ffffff;
   }
 
   .site-list__item--current {
