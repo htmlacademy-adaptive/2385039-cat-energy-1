@@ -84,7 +84,7 @@
 
   <main class="main-catalog">
     <section class="catalog">
-      <div class="catalog__wraper">
+      <div class="catalog__wrapper">
         <h1 class="main-catalog__title">
           Каталог продукции
         </h1>
@@ -392,98 +392,116 @@
           </li>
 
           <li class="catalog__item--more catalog__item">
-            <p class="">
-              Показать еще 100500 товаров
-            </p>
-            <p class="">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <button class="catalog__more" type="button">
+            <div class="catalog__item-more-wrapper">
+              <button class="catalog__more-button">
+                <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30">
+                  <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
+                </svg>
+              </button>
+              <p class="catalog__more-title">
+                Показать еще 100500 товаров
+              </p>
+              <p class="catalog__more-slogan">
+                На самом деле вкусов гораздо больше!
+              </p>
+            </div>
+            <button class="catalog__more button" type="button">
               показать все
             </button>
           </li>
 
         </ul>
-
       </div>
-    </section>
 
-    <section class="additionally">
-      <div class="additionally__wrapper">
-        <h2 class="additionally__title">
-          Дополнительные товары
-        </h2>
-        <ul class="additionally__list">
+      <div class="catalog__additionally">
+        <div class="catalog__additionally-wrapper">
+          <h2 class="catalog__additionally-title">
+            Дополнительные товары
+          </h2>
+          <ul class="catalog__additionally-list catalog__list">
 
-          <li class="additionally__item">
-            <a class="additionally__link">
-              Сахарозаменитель
-            </a>
-            <dl class="additionally__description">
-              <dt class="additionally__property">
-                1 упаковка (100 г)
-              </dt>
-              <dd class="additionally__value">
-                200 ₽
-              </dd>
-            </dl>
-          </li>
+            <li class="catalog__additionally-item catalog__item">
+              <a class="catalog__additionally-link catalog__link">
+                Сахарозаменитель
+              </a>
+              <dl class="catalog__additionally-description catalog__description">
+                <div class="catalog__additionally-description-wrapper catalog__description-wrapper">
+                  <dt class="catalog__additionally-property">
+                    1 упаковка (100 г)
+                  </dt>
+                  <dd class="catalog__additionally-value">
+                    200 ₽
+                  </dd>
+                </div>
+              </dl>
+            </li>
 
-          <li class="additionally__item">
-            <a class="additionally__link">
-              Питьевая вода
-            </a>
-            <dl class="additionally__description">
-              <dt class="additionally__property">
-                5 литров
-              </dt>
-              <dd class="additionally__value">
-                50 ₽
-              </dd>
-            </dl>
-          </li>
+            <li class="catalog__additionally-item catalog__item">
+              <a class="catalog__additionally-link catalog__link">
+                Питьевая вода
+              </a>
+              <dl class="catalog__additionally-description catalog__description">
+                <div class="catalog__additionally-description-wrapper catalog__description-wrapper">
+                  <dt class="catalog__additionally-property">
+                    5 литров
+                  </dt>
+                  <dd class="catalog__additionally-value">
+                    50 ₽
+                  </dd>
+                </div>
+              </dl>
+            </li>
 
-          <li class="additionally__item">
-            <a class="additionally__link">
-              молоко
-            </a>
-            <dl class="additionally__description">
-              <dt class="additionally__property">
-                1 литр
-              </dt>
-              <dd class="additionally__value">
-                100 ₽
-              </dd>
-            </dl>
-          </li>
+            <li class="catalog__additionally-item catalog__item">
+              <a class="catalog__additionally-link catalog__link">
+                молоко
+              </a>
+              <dl class="catalog__additionally-description catalog__description">
+                <div class="catalog__additionally-description-wrapper catalog__description-wrapper">
+                  <dt class="catalog__additionally-property">
+                    1 литр
+                  </dt>
+                  <dd class="catalog__additionally-value">
+                    100 ₽
+                  </dd>
+                </div>
+              </dl>
+            </li>
 
-          <li class="additionally__item">
-            <a class="additionally__link">
-              витамины
-            </a>
-            <dl class="additionally__description">
-              <dt class="additionally__property">
-                1 упаковка (30 г)
-              </dt>
-              <dd class="additionally__value">
-                300 ₽
-              </dd>
-            </dl>
-          </li>
+            <li class="catalog__additionally-item catalog__item">
+              <a class="catalog__additionally-link catalog__link">
+                витамины
+              </a>
+              <dl class="catalog__additionally-description catalog__description">
+                <div class="catalog__additionally-description-wrapper catalog__description-wrapper">
+                  <dt class="catalog__additionally-property">
+                    1 упаковка (30 г)
+                  </dt>
+                  <dd class="catalog__additionally-value">
+                    300 ₽
+                  </dd>
+                </div>
+              </dl>
+            </li>
 
-        </ul>
+          </ul>
 
-        <div class="additionally__gift">
-          <p class="additionally__gift-slogan">
-            Закажите все и получите чехол для
-            кота в подарок!
-          </p>
+          <div class="catalog__additionally-gift">
+            <div class="catalog__additionally-gif-wrapper">
+              <img class="catalog__additionally-gift-image" width="280" height="290" alt="#"
+                src="../img/catalog/catalog-gift.png">
+              <p class="catalog__additionally-gift-slogan">
+                Закажите все и получите чехол для
+                кота в подарок!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper catalog__contacts-wrapper">
         <h2 class="visually-hidden">
           Адрес компании
         </h2>
