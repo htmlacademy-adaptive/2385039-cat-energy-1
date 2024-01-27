@@ -47,6 +47,7 @@
     list-style-type: none;
   }
 
+  .site-list__catalog-current,
   .site-list__item--current {
     border-bottom: 2px solid #68b738;
   }
@@ -67,9 +68,15 @@
 
   .site-list__link {
     color: #ffffff;
+    font-size: 20px;
+    line-height: normal;
   }
 
   .site-list__item--current {
     border-bottom: 2px solid #ffffff;
+  }
+
+  .site-list__link-catalog {
+    color: #000000;
   }
 }

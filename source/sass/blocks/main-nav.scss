@@ -47,12 +47,12 @@
 
   .main-nav__wrapper {
     display: grid;
-    grid-template-columns: 1fr repeat(2, 154px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 33px;
     justify-content: start;
   }
 
   .main-nav__list {
-    width: 475px;
+    width: 478px;
   }
 }
