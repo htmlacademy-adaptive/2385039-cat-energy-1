@@ -61,17 +61,17 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="#">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="catalog.html">
                 каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--current">
               <a class="site-list__link" href="#">
                 подбор программы
               </a>
@@ -84,70 +84,76 @@
 
   <main class="main-selection">
     <section class="selection">
+      <h1 class="main-selection__title">
+        Подбор программы
+      </h1>
       <div class="selection__wrapper">
-        <h1 class="selection__title">
-          Подбор программы
-        </h1>
         <p class="selection__info">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
-
         <form class="selection__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="selection__form-questionary">
             <legend class="visually-hidden">Анкетные данные питомца</legend>
-            <label class="selection__form-item">
-              ИМЯ:*
-              <input class="selection__form-description" name="name" type="text" placeholder="барсик" required>
-            </label>
-            <label class="selection__form-item">
-              Вес (кг):*
-              <input class="selection__form-description" name="weight" type="number" placeholder="7" required>
-            </label>
-            <label class="selection__form-item">
-              Возраст (лет):
-              <input class="selection__form-description" name="age" type="number" placeholder="7">
-            </label>
+            <div class="selection__questionary-wrapper">
+              <label class="selection__form-item">
+                ИМЯ:*
+                <input class="selection__form-description" aria-label="Имя питомца" name="name" type="text"
+                  placeholder="барсик" required>
+              </label>
+              <label class="selection__form-item">
+                Вес&nbsp;(кг):*
+                <input class="selection__form-description" name="weight" type="number" placeholder="7" required>
+              </label>
+              <label class="selection__form-item">
+                Возраст&nbsp;(лет):
+                <input class="selection__form-description" name="age" type="number" placeholder="7">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="selection__program">
             <legend class="visually-hidden">Виды программ</legend>
-            <ul class="selection__program-list">
-              <li class="selection__program-item">
-                <label class="selection__program-description">
-                  <input class="selection__form-description" type="radio" name="weight-loss" value="weight-loss"
-                    checked>
+            <div class="selection__program-wrapper">
+              <ul class="selection__program-list">
+                <li class="selection__program-item">
+                  <label class="selection__program-description">
+                    <input class="selection__program-input" type="radio" name="weight-loss" value="weight-loss" checked>
+                  </label>
                   похудение
-                </label>
-              </li>
-              <li class="selection__program-item">
-                <label class="selection__program-description">
-                  <input class="selection__form-description" type="radio" name="weight-gai" value="weight-gain">
+                </li>
+                <li class="selection__program-item">
+                  <label class="selection__program-description">
+                    <input class="selection__program-input" type="radio" name="weight-gai" value="weight-gain">
+                  </label>
                   Набор массы
-                </label>
-              </li>
-              <li class="selection__program-item">
-                <label class="selection__program-description">
-                  <input class="selection__form-description" type="radio" name="need-advice" value="need-advice">
+                </li>
+                <li class="selection__program-item">
+                  <label class="selection__program-description">
+                    <input class="selection__program-input" type="radio" name="need-advice" value="need-advice">
+                  </label>
                   Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="selection__form-questionary">
             <legend class="selection__form-title">
               Контактные данные (владельца кота)
             </legend>
-            <label class="selection__form-item">
-              E-mail:*
-              <input class="selection__form-description" type="email" name="email" placeholder="кuklachev@gmail.com"
-                required>
-            </label>
-            <label class="selection__form-item">
-              Телефон:*
-              <input class="selection__form-description" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="selection__questionary-wrapper">
+              <label class="selection__form-item">
+                E-&nbsp;mail:*
+                <input class="selection__form-description" aria-label="Адрес электронной почты" type="email"
+                  name="email" placeholder="кuklachev@gmail.com" required>
+              </label>
+              <label class="selection__form-item">
+                Телефон:*
+                <input class="selection__form-description" aria-label="Контактный номер телефона" type="tel" name="tel"
+                  placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="selection__form-questionary">

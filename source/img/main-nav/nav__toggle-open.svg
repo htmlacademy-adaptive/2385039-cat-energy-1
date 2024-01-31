@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#E5E5E5" d="M0 0h20v20H0z"/><g clip-path="url(#a)"><path fill="#fff" d="M-281-21H39v2983h-320z"/><path stroke="#000" stroke-width="1.5" d="M-5 2.25h24M-5 10.25h24M-5 18.25h24"/><g clip-path="url(#b)"><path fill="#fff" d="M-281-21H39v264h-320z"/><path stroke="#000" stroke-width="1.5" d="M0-.75h24.76" transform="rotate(-46.64 24.2 7.68)"/><path stroke="#000" stroke-width="1.5" d="M0-.75h24.76" transform="rotate(46.64 -1.82 2.16)"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M-281-21H39v567h-320z"/></clipPath><clipPath id="b"><path fill="#fff" d="M-281-21H39v264h-320z"/></clipPath></defs></svg>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+<line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+</svg>
