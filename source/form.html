@@ -13,8 +13,8 @@
     <div class="main-header__wrapper">
       <div class="logo">
         <div class="logo__wrapper">
-          <img class="logo__icon" width="33" height="38" src="./img/main-header/logo-mobile.svg"
-            alt="Логотип-иконка кота.">
+          <img class="logo__icon" width="33" height="38" src="img/main-header/logo-mobile.svg"
+            alt="Логотип-иконка кота">
           <a class="logo__text logo__text--header" href="#" aria-label="Перейти на главную страницу">
             <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
               <g clip-path="url(#clip0_135_3354)">
@@ -57,7 +57,7 @@
 
       <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -119,20 +119,20 @@
                 <li class="selection__program-item">
                   <label class="selection__program-description">
                     <input class="selection__program-input" type="radio" name="weight-loss" value="weight-loss" checked>
+                    похудение
                   </label>
-                  похудение
                 </li>
                 <li class="selection__program-item">
                   <label class="selection__program-description">
                     <input class="selection__program-input" type="radio" name="weight-gai" value="weight-gain">
+                    Набор массы
                   </label>
-                  Набор массы
                 </li>
                 <li class="selection__program-item">
                   <label class="selection__program-description">
                     <input class="selection__program-input" type="radio" name="need-advice" value="need-advice">
+                    Не знаю (Нужен ваш совет)
                   </label>
-                  Не знаю (Нужен ваш совет)
                 </li>
               </ul>
             </div>
@@ -145,8 +145,8 @@
             <div class="selection__questionary-wrapper">
               <label class="selection__form-item">
                 E-&nbsp;mail:*
-                <input class="selection__form-description" aria-label="Адрес электронной почты" type="email"
-                  name="email" placeholder="кuklachev@gmail.com" required>
+                <input class="selection__form-email selection__form-description" aria-label="Адрес электронной почты"
+                  type="email" name="email" placeholder="кuklachev@gmail.com" required>
               </label>
               <label class="selection__form-item">
                 Телефон:*
@@ -161,8 +161,9 @@
               Комментарий
             </legend>
             <label class="selection__form-item">
-              <input class="selection__form-description" type="text" name="more-info"
-                placeholder="Расскажите обо всех повАдках кота">
+              <textarea class="selection__form-description" id="more-info" name="more-info" rows="10" cols="80">
+               Расскажите обо всех повАдках кота
+              </textarea>
             </label>
           </fieldset>
 
@@ -188,7 +189,7 @@
               витамины
             </label>
           </fieldset>
-          <button class="selection__button button" type="button">
+          <button class="selection__button button" type="submit">
             отправить заявку
           </button>
           <span class="selection__span">
@@ -317,3 +318,4 @@
 </body>
 
 </html>
+
