@@ -138,17 +138,17 @@
             </div>
           </fieldset>
 
-          <fieldset class="selection__form-questionary">
+          <fieldset class="selection__form-contact">
             <legend class="selection__form-title">
               Контактные данные (владельца кота)
             </legend>
-            <div class="selection__questionary-wrapper">
-              <label class="selection__form-item">
+            <div class="selection__contact-wrapper">
+              <label class="selection__form-email selection__form-item">
                 E-&nbsp;mail:*
-                <input class="selection__form-email selection__form-description" aria-label="Адрес электронной почты"
+                <input class="selection__form-description" aria-label="Адрес электронной почты"
                   type="email" name="email" placeholder="кuklachev@gmail.com" required>
               </label>
-              <label class="selection__form-item">
+              <label class="selection__form-phone selection__form-item">
                 Телефон:*
                 <input class="selection__form-description" aria-label="Контактный номер телефона" type="tel" name="tel"
                   placeholder="8 (960) 900-60-90" required>
@@ -156,38 +156,52 @@
             </div>
           </fieldset>
 
-          <fieldset class="selection__form-questionary">
-            <legend class="selection__form-title">
+          <fieldset class="selection__form-comment">
+            <legend class="selection__comment-title selection__form-title">
               Комментарий
             </legend>
-            <label class="selection__form-item">
-              <textarea class="selection__form-description" id="more-info" name="more-info" rows="10" cols="80">
-                Расскажите обо всех повАдках кота
+            <div class="selection__comment-wrapper">
+            <label class="selection__form-comment selection__form-item">
+              <textarea class="selection__form-textarea selection__form-description" id="more-info" name="more-info">
+                Расскажите обо всех повАдках кота"
               </textarea>
             </label>
+          </div>
           </fieldset>
 
           <fieldset class="selection__additionally">
-            <legend class="selection__additionally-title">
+            <legend class="selection__additionally-title selection__form-title">
               Дополнительно
             </legend>
-            <label class="selection__checkbox">
-              <input class="selection__additionally-checkbox" type="checkbox" name="sweetener" value="sweetener"
+            <div class="selection__additionally-wrapper">
+              <ul class="selection__additionally-list">
+                <li class="selection__additionally-item">
+            <label class="selection__additionally-description">
+              <input class="selection__additionally-input" type="checkbox" name="sweetener" value="sweetener"
                 checked>
               сахарозаменитель
             </label>
-            <label class="selection__checkbox">
-              <input class="selection__additionally-checkbox" type="checkbox" name="milk" value="milk">
+          </li>
+          <li class="selection__additionally-item">
+            <label class="selection__additionally-description">
+              <input class="selection__additionally-input" type="checkbox" name="milk" value="milk">
               молоко
             </label>
-            <label class="selection__checkbox">
-              <input class="selection__additionally-checkbox" type="checkbox" name="water" value="water">
+          </li>
+          <li class="selection__additionally-item">
+            <label class="selection__additionally-description">
+              <input class="selection__additionally-input" type="checkbox" name="water" value="water">
               питьевая вода
             </label>
-            <label class="selection__checkbox">
-              <input class="selection__additionally-checkbox" type="checkbox" name="vitamins" value="vitamins">
+          </li>
+          <li class="selection__additionally-item">
+            <label class="selection__additionally-description">
+              <input class="selection__additionally-input" type="checkbox" name="vitamins" value="vitamins">
               витамины
             </label>
+          </li>
+          </ul>
+          </div>
           </fieldset>
           <button class="selection__button button" type="submit">
             отправить заявку
@@ -200,7 +214,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__form-wrapper contacts__wrapper">
         <h2 class="visually-hidden">
           Адрес компании
         </h2>

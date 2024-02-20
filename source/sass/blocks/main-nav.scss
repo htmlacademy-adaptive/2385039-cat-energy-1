@@ -4,6 +4,7 @@
 
 .main-nav__list {
   display: none;
+  z-index: 1;
 }
 
 .main-nav__toggle {
@@ -35,6 +36,10 @@
     height: 20px;
     background-image: url("../img/main-nav/nav__toggle-open.svg");
     background-color: #ffffff;
+
+    .main-nav--opened .main-nav__list {
+      display: block;
+    }
   }
 }
 
@@ -48,16 +53,6 @@
 
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav--opened .main-nav__wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 70px;
-    z-index: 10;
-    min-height: 80vh;
-    background-color: #6a4d38;
   }
 
   .main-nav__list {

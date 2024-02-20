@@ -24,13 +24,18 @@
 }
 
 .selection__form-questionary,
-.selection__program {
+.selection__program,
+.selection__form-contact,
+.selection__form-comment {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.selection__questionary-wrapper {
+.selection__questionary-wrapper,
+.selection__contact-wrapper,
+.selection__comment-wrapper,
+.selection__additionally-wrapper {
   margin: 0;
   margin-bottom: 22px;
   padding: 0 20px;
@@ -54,20 +59,16 @@
   align-items: center;
   gap: 13px;
   width: 280px;
+  position: relative;
 }
 
 .selection__form-description {
   margin: 0;
-  padding: 14px 0 13px 15px;
+  padding: 14px 15px 13px 15px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
   width: 100%;
-  position: relative;
-}
-
-.selection__form-description input {
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
 }
 
 
@@ -92,12 +93,14 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.selection__program-list {
+.selection__program-list,
+.selection__additionally-list {
   margin: 0;
   padding: 0;
 }
 
-.selection__program-item {
+.selection__program-item,
+.selection__additionally-item {
   margin: 0;
   margin-bottom: 13px;
   padding: 0;
@@ -113,7 +116,8 @@
   padding-bottom: 19px;
 }
 
-.selection__program-item input {
+.selection__program-item input,
+.selection__additionally-item input {
   appearance: none;
   border: 1px solid #cdcdcd;
   margin: 0;
@@ -121,8 +125,8 @@
   cursor: pointer;
 }
 
-
-.selection__program-description {
+.selection__program-description,
+.selection__additionally-description {
   margin: 0;
   padding: 0;
   display: flex;
@@ -169,11 +173,14 @@
   background-color: #68b738;
   bottom: 34px;
   right: 0;
+  background-position: center;
 }
 
 
-.selection__form-email {
-  position: relative;
+.selection__form-item input {
+  padding-right: 49px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 
@@ -184,6 +191,96 @@
   background-repeat: no-repeat;
   width: 17px;
   height: 13px;
-  left: 20px;
+  right: 15px;
   background-position: center;
+}
+
+.selection__form-phone::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/selection/phone-vector.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 13px;
+  right: 15px;
+  background-position: center;
+}
+
+.selection__contact-wrapper,
+.selection__comment-wrapper,
+.selection__additionally-wrapper {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.selection__form-textarea {
+  overflow-wrap: break-word;
+  width: 280px;
+  height: 150px;
+  display: flex;
+  justify-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.selection__comment-title::before {
+  width: 159px;
+  bottom: 12px;
+  right: 0;
+}
+
+.selection__additionally {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.selection__additionally-wrapper {
+  padding-bottom: 34px;
+}
+
+.selection__additionally-title::before {
+  width: 139px;
+  bottom: 12px;
+}
+
+.selection__additionally-item:last-child {
+  margin-bottom: 0;
+}
+
+.selection__additionally-input {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.selection__additionally-input:checked {
+  background-image: url("../img/selection/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.selection__button {
+  margin: 0 20px;
+  margin-bottom: 21px;
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  border: none;
+}
+
+.selection__span {
+  margin: 0 20px;
+  margin-bottom: 32px;
+  padding: 0;
+  width: 280px;
+  display: block;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
