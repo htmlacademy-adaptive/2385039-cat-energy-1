@@ -17,5 +17,14 @@
     font-size: 60px;
     line-height: 60px;
     border-top: none;
+    margin-bottom: 54px;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-selection__title {
+    margin-bottom: 55px;
+    padding: 0 110px;
   }
 }

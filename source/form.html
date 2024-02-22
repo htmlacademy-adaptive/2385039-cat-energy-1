@@ -62,17 +62,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+              <a class="site-list__link-catalog site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link-catalog site-list__link" href="catalog.html">
                 каталог продукции
               </a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="#">
+            <li class="site-list__item site-list__catalog-current">
+              <a class="site-list__link-catalog site-list__link" href="#">
                 подбор программы
               </a>
             </li>
@@ -145,8 +145,8 @@
             <div class="selection__contact-wrapper">
               <label class="selection__form-email selection__form-item">
                 E-&nbsp;mail:*
-                <input class="selection__form-description" aria-label="Адрес электронной почты"
-                  type="email" name="email" placeholder="кuklachev@gmail.com" required>
+                <input class="selection__form-description" aria-label="Адрес электронной почты" type="email"
+                  name="email" placeholder="кuklachev@gmail.com" required>
               </label>
               <label class="selection__form-phone selection__form-item">
                 Телефон:*
@@ -161,12 +161,12 @@
               Комментарий
             </legend>
             <div class="selection__comment-wrapper">
-            <label class="selection__form-comment selection__form-item">
-              <textarea class="selection__form-textarea selection__form-description" id="more-info" name="more-info">
-                Расскажите обо всех повАдках кота"
-              </textarea>
-            </label>
-          </div>
+              <label class="selection__form-comment selection__form-item">
+                <input class="selection__form-textarea selection__form-description" type="text" name="more-info"
+                  placeholder="Расскажите обо всех повАдках кота">
+                </input>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="selection__additionally">
@@ -176,39 +176,41 @@
             <div class="selection__additionally-wrapper">
               <ul class="selection__additionally-list">
                 <li class="selection__additionally-item">
-            <label class="selection__additionally-description">
-              <input class="selection__additionally-input" type="checkbox" name="sweetener" value="sweetener"
-                checked>
-              сахарозаменитель
-            </label>
-          </li>
-          <li class="selection__additionally-item">
-            <label class="selection__additionally-description">
-              <input class="selection__additionally-input" type="checkbox" name="milk" value="milk">
-              молоко
-            </label>
-          </li>
-          <li class="selection__additionally-item">
-            <label class="selection__additionally-description">
-              <input class="selection__additionally-input" type="checkbox" name="water" value="water">
-              питьевая вода
-            </label>
-          </li>
-          <li class="selection__additionally-item">
-            <label class="selection__additionally-description">
-              <input class="selection__additionally-input" type="checkbox" name="vitamins" value="vitamins">
-              витамины
-            </label>
-          </li>
-          </ul>
-          </div>
+                  <label class="selection__additionally-description">
+                    <input class="selection__additionally-input" type="checkbox" name="sweetener" value="sweetener"
+                      checked>
+                    сахарозаменитель
+                  </label>
+                </li>
+                <li class="selection__additionally-item">
+                  <label class="selection__additionally-description">
+                    <input class="selection__additionally-input" type="checkbox" name="water" value="water">
+                    питьевая вода
+                  </label>
+                </li>
+                <li class="selection__additionally-item">
+                  <label class="selection__additionally-description">
+                    <input class="selection__additionally-input" type="checkbox" name="milk" value="milk">
+                    молоко
+                  </label>
+                </li>
+                <li class="selection__additionally-item">
+                  <label class="selection__additionally-description">
+                    <input class="selection__additionally-input" type="checkbox" name="vitamins" value="vitamins">
+                    витамины
+                  </label>
+                </li>
+              </ul>
+              <div class="selection__button-wrapper">
+                <button class="selection__button button" type="submit">
+                  отправить заявку
+                </button>
+                <span class="selection__span">
+                  * — Обязательные поля
+                </span>
+              </div>
+            </div>
           </fieldset>
-          <button class="selection__button button" type="submit">
-            отправить заявку
-          </button>
-          <span class="selection__span">
-            * — Обязательные поля
-          </span>
         </form>
       </div>
     </section>
@@ -328,8 +330,8 @@
     </footer>
 
   </main>
-<script src="script.js" defer>
-</script>
+  <script src="script.js" defer>
+  </script>
 </body>
 
 </html>
