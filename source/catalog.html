@@ -548,8 +548,16 @@
 
           <div class="catalog__additionally-gift">
             <div class="catalog__additionally-gif-wrapper">
-              <img class="catalog__additionally-gift-image" width="280" height="290" alt="Подарок"
+              <picture>
+                <source media="(min-width: 1440px)"
+                srcset="img/catalog/catalog-gift-desktop.png 1x, img/catalog/catalog-gift-desktop@2x.png 2x"
+                width="245" heigth="288">
+                <source media="(min-width: 768px)"
+                srcset="img/catalog/catalog-gift-tablet.png 1x, img/catalog/catalog-gift-tablet@2x.png 2x"
+                width="707" heigth="200">
+              <img class="catalog__additionally-gift-image" width="280" height="290" alt="Подарок" srcset="img/catalog/catalog-gift@2x.png 2x"
                 src="img/catalog/catalog-gift.png">
+              </picture>
               <p class="catalog__additionally-gift-slogan">
                 Закажите все и получите чехол для
                 кота в подарок!

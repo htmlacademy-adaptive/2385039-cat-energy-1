@@ -112,8 +112,18 @@
   flex-wrap: nowrap;
 }
 
+
+.stats-sliders__before,
+.stats-sliders__after {
+  width: 140px;
+  height: 256px;
+}
+
 .stats__slider-icon {
+  position: absolute;
   margin-left: -160px;
+  width: 40px;
+  height: 256px;
 }
 
 @media (min-width: $tablet-width) {
@@ -196,7 +206,17 @@
     height: 512px;
     justify-content: center;
     object-fit: cover;
-    outline: 1px solid rgb(254, 5, 5);
+  }
+
+  .stats-sliders__before,
+  .stats-sliders__after {
+    width: 280px;
+    height: 512px;
+  }
+
+  .stats__slider-icon {
+    height: 512px;
+    margin-left: -300px;
   }
 }
 
@@ -241,7 +261,6 @@
     top: 0;
     right: 110px;
     padding: 0;
-    outline: 1px solid rgb(255, 0, 0);
     background-position: center;
   }
 }
