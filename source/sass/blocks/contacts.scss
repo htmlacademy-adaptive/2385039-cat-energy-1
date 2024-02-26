@@ -3,11 +3,19 @@
   padding: 0;
 }
 
+.contacts__form-wrapper {
+  background-color: #f2f2f2;
+}
+
 .contacts__wrapper {
   margin: 0;
   padding: 26px 20px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+}
+
+.contacts__wrapper-catalog {
+  background-color: #f2f2f2;
 }
 
 .contacts__slogan {
@@ -33,12 +41,9 @@
   line-height: 20px;
 }
 
-.contacts__image {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  height: 362px;
-  object-fit: contain;
+.contacts__map iframe {
+  display: block;
+  border: none;
 }
 
 
@@ -61,18 +66,30 @@
     text-align: right;
     font-size: 16px;
   }
+
+  .contacts__map iframe {
+    width: 768px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
+    margin: 0;
     margin-top: 95px;
     margin-left: 110px;
-    margin-bottom: 106px;
     padding: 60px 78px;
     width: 565px;
+    position: absolute;
+    z-index: 0;
+    background-color: #ffffff;
   }
 
   .contacts__address {
     text-align: left;
+  }
+
+  .contacts__map iframe {
+    width: 1440px;
   }
 }

@@ -5,8 +5,9 @@
 
 .logo__wrapper {
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  width: 280px;
+  width: 320px;
 }
 
 .logo__icon {
@@ -40,6 +41,7 @@
 
   .logo__icon {
     margin: 0;
+    margin-right: 13px;
     width: 60px;
     height: 50px;
   }
@@ -50,5 +52,24 @@
     width: 101px;
     height: 50px;
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo__icon {
+    margin-right: 14px;
+    width: 70px;
+    height: 51px;
+  }
+
+  .logo__text--header {
+    padding: 19px 0;
+    width: 118px;
+    height: 59px;
   }
 }

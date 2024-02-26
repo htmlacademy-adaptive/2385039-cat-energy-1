@@ -7,10 +7,14 @@
   margin: 0 auto;
   padding: 0;
   width: 320px;
+  min-height: 499px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 135px);
+  z-index: 1;
+  position: relative;
 }
+
 
 .hero__slogan {
   margin: 0;
@@ -27,12 +31,18 @@
   width: 320px;
 }
 
+.hero__image-wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .hero__image {
   margin: 0 20px;
   margin-bottom: 3px;
   padding: 0;
   width: 280px;
   height: 270px;
+  z-index: 0;
 }
 
 .hero__choose-program {
@@ -47,7 +57,6 @@
   .hero__wrapper {
     width: 708px;
     margin: 0 auto;
-    padding-left: 90px;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -59,31 +68,54 @@
     line-height: 20px;
     width: 373px;
     padding: 0;
+    padding-left: 90px;
     justify-content: start;
+    margin-bottom: 21px;
+  }
+
+  .hero__image-wrapper {
     order: 1;
   }
 
   .hero__image {
     margin: 0;
-    width: 708px;
-    height: 608px;
-    display: block;
-    order: 3;
+    margin-top: -83px;
+    padding: 0;
+    width: 709px;
+    height: 609px;
   }
 
   .hero__choose-program {
     margin: 0;
+    margin-top: 29px;
+    margin-left: 90px;
     padding: 14px 26px;
     width: 244px;
-    order: 2;
+    z-index: 0;
+    order: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero__wrapper {
     width: 1440px;
+    padding-top: 80px;
     padding-left: 190px;
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+    background: none;
+    margin-bottom: 133px;
+    position: relative;
+  }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/hero/index-background-desktop.png") no-repeat center / cover;
+    width: 720px;
+    height: 694px;
+    top: -144px;
+    right: 0;
   }
 
   .hero__slogan {
@@ -92,14 +124,16 @@
     line-height: 20px;
     width: 373px;
     padding: 0;
-    order: 1;
+    margin-bottom: 51px;
   }
 
   .hero__image {
-    width: 522px;
+    width: 552px;
     height: 499px;
     display: block;
-    order: 3;
+    position: absolute;
+    top: 82px;
+    right: 331px;
   }
 
   .hero__choose-program {
