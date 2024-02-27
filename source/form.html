@@ -13,8 +13,12 @@
     <div class="main-header__wrapper">
       <div class="logo">
         <div class="logo__wrapper">
-          <img class="logo__icon" width="33" height="38" src="img/main-header/logo-mobile.svg"
-            alt="Логотип-иконка кота">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
+            <img class="logo__icon" width="33" height="38" src="img/logo/logo-mobile.svg"
+              alt="Логотип-иконка кота">
+          </picture>
           <a class="logo__text logo__text--header" href="#" aria-label="Перейти на главную страницу">
             <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
               <g clip-path="url(#clip0_135_3354)">
@@ -55,7 +59,7 @@
         </div>
       </div>
 
-      <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -224,9 +228,10 @@
           приглашаем к сотрудничеству дилеров!
         </p>
         <address class="contacts__address">
-          <a class="address" href="#">
-            ул. Большая Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
-          </a>
+          <p class="address">
+            ул. Большая Конюшенная, д. 19/8
+          <p>Санкт-Петербург</p>
+          </p>
         </address>
       </div>
       <div class="contacts__map">

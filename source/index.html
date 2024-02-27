@@ -17,8 +17,12 @@
     <div class="main-header__wrapper">
       <div class="logo">
         <div class="logo__wrapper">
-            <img class="logo__icon" width="33" height="38" src="img/main-header/logo-mobile.svg"
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
+            <img class="logo__icon" width="33" height="38" src="img/logo/logo-mobile.svg"
               alt="Логотип-иконка кота">
+          </picture>
             <a class="logo__text logo__text--header" href="#" aria-label="Перейти на главную страницу">
               <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
                 <g clip-path="url(#clip0_135_3354)">
@@ -98,12 +102,13 @@
         <div class="hero__image-wrapper">
           <picture>
             <source media="(min-width: 1440px)"
-            srcset="img/main-header/index-can-desktop.jpg 1x, img/main-header/index-can-desktop@2x.jpg 2x"
-            width="552" heigth="499">
+              srcset="img/main-header/index-can-desktop.jpg 1x, img/main-header/index-can-desktop@2x.jpg 2x" width="552"
+              heigth="499">
             <source media="(min-width: 768px)"
-            srcset="img/main-header/index-can-tablet.jpg 1x, img/main-header/index-can-tablet@2x.jpg 2x"
-            width="709" heigth="609">
-            <img class="hero__image" width="280" height="270" src="img/main-header/index-can-mobile.jpg" srcset="img/main-header/index-can-mobile@2x.jpg 2x" alt="Фото продукции компании">
+              srcset="img/main-header/index-can-tablet.jpg 1x, img/main-header/index-can-tablet@2x.jpg 2x" width="709"
+              heigth="609">
+            <img class="hero__image" width="280" height="270" src="img/main-header/index-can-mobile.jpg"
+              srcset="img/main-header/index-can-mobile@2x.jpg 2x" alt="Фото продукции компании">
           </picture>
         </div>
         <a class="hero__choose-program button" href="#">
@@ -228,24 +233,23 @@
         <div class="stats-sliders">
           <picture>
             <source media="(min-width: 768px)"
-            srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x"
-            width="280" heigth="512">
-          <img class="stats-sliders__before" width="140" height="256" src="img/stats/cat-before.jpg" srcset="img/stats/cat-before@2x.jpg 2x"
-            alt="Фото-слайдер кота до">
+              srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x" width="280"
+              heigth="512">
+            <img class="stats-sliders__before" width="140" height="256" src="img/stats/cat-before.jpg"
+              srcset="img/stats/cat-before@2x.jpg 2x" alt="Фото-слайдер кота до">
           </picture>
           <picture>
             <source media="(min-width: 768px)"
-            srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x"
-            width="280" heigth="512">
-          <img class="stats-sliders__after" width="140" height="256" src="img/stats/cat-after.jpg" srcset="img/stats/cat-after@2x.jpg 2x"
-            alt="Фото-слайдер кота после">
+              srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x" width="280" heigth="512">
+            <img class="stats-sliders__after" width="140" height="256" src="img/stats/cat-after.jpg"
+              srcset="img/stats/cat-after@2x.jpg 2x" alt="Фото-слайдер кота после">
           </picture>
           <picture>
             <source media="(min-width: 768px)"
-            srcset="img/stats/slider-icon-tablet.jpg 1x, img/stats/slider-icon-tablet@2x.jpg 2x"
-            width="40" heigth="512">
-          <img class="stats__slider-icon" width="40" height="256" src="img/stats/slider-icon.jpg" srcset="img/stats/slider-icon@2x.jpg 2x"
-            alt="Бегунок-переключатель слайдера">
+              srcset="img/stats/slider-icon-tablet.jpg 1x, img/stats/slider-icon-tablet@2x.jpg 2x" width="40"
+              heigth="512">
+            <img class="stats__slider-icon" width="40" height="256" src="img/stats/slider-icon.jpg"
+              srcset="img/stats/slider-icon@2x.jpg 2x" alt="Бегунок-переключатель слайдера">
           </picture>
         </div>
       </div>
@@ -260,9 +264,10 @@
           приглашаем к сотрудничеству дилеров!
         </p>
         <address class="contacts__address">
-          <a class="address" href="#">
-            ул. Большая Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
-          </a>
+          <p class="address">
+            ул. Большая Конюшенная, д. 19/8
+          <p>Санкт-Петербург</p>
+          </p>
         </address>
       </div>
       <div class="contacts__map">
