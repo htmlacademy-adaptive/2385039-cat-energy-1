@@ -120,10 +120,12 @@
 }
 
 .stats__slider-icon {
+  margin: 0;
   position: absolute;
-  margin-left: -160px;
+  left: 140px;
   width: 40px;
   height: 256px;
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -215,8 +217,9 @@
   }
 
   .stats__slider-icon {
+    left: 364px;
+    width: 40px;
     height: 512px;
-    margin-left: -300px;
   }
 }
 
@@ -262,5 +265,9 @@
     right: 110px;
     padding: 0;
     background-position: center;
+  }
+
+  .stats__slider-icon {
+    left: 260px;
   }
 }

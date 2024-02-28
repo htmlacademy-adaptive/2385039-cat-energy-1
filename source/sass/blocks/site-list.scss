@@ -46,6 +46,10 @@
     padding-bottom: 12px;
   }
 
+  .site-list:last-child {
+    border-bottom: none;
+  }
+
   .site-list__item {
     margin: 0;
     padding: 0;

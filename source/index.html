@@ -13,6 +13,7 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="logo">
@@ -244,13 +245,9 @@
             <img class="stats-sliders__after" width="140" height="256" src="img/stats/cat-after.jpg"
               srcset="img/stats/cat-after@2x.jpg 2x" alt="Фото-слайдер кота после">
           </picture>
-          <picture>
-            <source media="(min-width: 768px)"
-              srcset="img/stats/slider-icon-tablet.jpg 1x, img/stats/slider-icon-tablet@2x.jpg 2x" width="40"
-              heigth="512">
-            <img class="stats__slider-icon" width="40" height="256" src="img/stats/slider-icon.jpg"
-              srcset="img/stats/slider-icon@2x.jpg 2x" alt="Бегунок-переключатель слайдера">
-          </picture>
+              <svg role="img" class="stats__slider-icon" aria-hidden="true" focusable="false" aria-label="Бегунок-переключатель слайдера" width="40" height="256">
+                <use href="img/sprite.svg#slider-icon"></use>
+              </svg>
         </div>
       </div>
     </section>
