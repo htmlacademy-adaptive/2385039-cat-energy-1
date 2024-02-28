@@ -23,6 +23,18 @@
   margin: 0;
   padding: 0;
   width: 28px;
+  color: #666666;
+
+
+  &:hover {
+    color: #68b738;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .social__link--v,

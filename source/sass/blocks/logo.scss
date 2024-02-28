@@ -19,6 +19,19 @@
   height: 38px;
 }
 
+.logo__text {
+  color: #111111;
+
+  &:hover {
+    color: #3e3e3e;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}
+
 .logo__text--header {
   padding: 0;
   margin: 0;
@@ -32,6 +45,7 @@
   padding: 0;
   width: 128px;
   height: 24px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
