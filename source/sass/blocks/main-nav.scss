@@ -15,7 +15,7 @@
   padding: 0;
   cursor: pointer;
   border: none;
-  top: 20px;
+  top: 21px;
   right: 20px;
   width: 24px;
   height: 24px;
@@ -36,11 +36,12 @@
     height: 20px;
     background-image: url("../img/main-nav/nav__toggle-open.svg");
     background-color: #ffffff;
-
-    .main-nav__list {
-      display: block;
-    }
   }
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  z-index: 2;
 }
 
 

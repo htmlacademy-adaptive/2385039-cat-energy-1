@@ -17,6 +17,10 @@
   background-color: #ffffff;
 }
 
+.site-list:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .site-list__item {
   margin: 0;
   padding: 0;
@@ -40,6 +44,10 @@
     display: block;
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .site-list:last-child {
+    border-bottom: none;
   }
 
   .site-list__item {

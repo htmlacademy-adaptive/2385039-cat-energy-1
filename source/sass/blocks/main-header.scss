@@ -4,9 +4,8 @@
 }
 
 .main-header__wrapper {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  min-height: 65px;
   position: relative;
 }
 
@@ -18,8 +17,7 @@
     column-gap: 94px;
     width: 708px;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 65px;
+    margin: 25px 30px 65px 30px;
     max-height: 60px;
   }
 }

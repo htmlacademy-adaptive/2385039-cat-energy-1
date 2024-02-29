@@ -4,22 +4,37 @@
 }
 
 .logo__wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 11px 20px;
   display: flex;
   width: 320px;
+  gap: 56px;
+  align-items: center;
 }
 
 .logo__icon {
-  margin: 13px 0;
+  margin: 0;
   padding: 0;
   width: 33px;
   height: 38px;
 }
 
+.logo__text {
+  color: #111111;
+
+  &:hover {
+    color: #3e3e3e;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}
+
 .logo__text--header {
   padding: 0;
-  margin: 23px 65px 24px 56px;
+  margin: 0;
   width: 101px;
   height: 18px;
   display: flex;
@@ -30,6 +45,7 @@
   padding: 0;
   width: 128px;
   height: 24px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,11 +53,12 @@
     width: 176px;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    gap: 13px;
   }
 
   .logo__icon {
     margin: 0;
-    margin-right: 13px;
     width: 60px;
     height: 50px;
   }
@@ -62,7 +79,6 @@
   }
 
   .logo__icon {
-    margin-right: 14px;
     width: 70px;
     height: 51px;
   }

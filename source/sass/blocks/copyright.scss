@@ -18,6 +18,15 @@
   padding: 0;
   width: 112px;
   height: 15px;
+  color: #666666;
+
+  &:hover {
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__icon {
@@ -25,6 +34,17 @@
   padding: 0;
   width: 27px;
   height: 34px;
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
