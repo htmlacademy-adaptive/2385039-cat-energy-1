@@ -217,16 +217,18 @@
   margin-bottom: 0;
 }
 
-.selection__form-textarea {
-  overflow-wrap: break-word;
+.selection__form-comment textarea {
   width: 280px;
   height: 150px;
-  display: flex;
-  justify-items: flex-start;
   margin: 0;
   padding: 14px;
-  font-size: 16px;
-  line-height: 18px;
+  font-family: inherit;
+}
+
+.selection__form-textarea::placeholder {
+  margin: 0;
+  padding: 0;
+  max-width: 252px;
 }
 
 .selection__comment-title::before {
@@ -314,6 +316,10 @@
     width: 628px;
     gap: 20px;
     border-bottom: none;
+  }
+
+  .selection__comment-wrapper {
+    margin-bottom: 65px;
   }
 
   .selection__questionary-wrapper {
@@ -416,12 +422,13 @@
     bottom: 16px;
   }
 
-  .selection__form-textarea {
+  .selection__form-comment textarea {
     width: 628px;
     min-height: 175px;
-    margin-bottom: 65px;
-    padding-top: 13px;
-    padding-left: 22px;
+    padding-top: 11px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .selection__additionally-wrapper {
@@ -543,6 +550,11 @@
     left: -110px;
   }
 
+  .selection__comment-wrapper {
+    margin-bottom: 0;
+    width: 1220px;
+  }
+
   .selection__comment-title {
     margin-bottom: 78px;
   }
@@ -557,12 +569,9 @@
     width: 1220px;
   }
 
-  .selection__form-textarea {
+  .selection__form-comment textarea {
     width: 1220px;
-    margin: 0;
     padding-top: 9px;
-    padding-left: 20px;
-    text-align: start;
   }
 
   .selection__additionally-wrapper {

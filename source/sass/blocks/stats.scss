@@ -124,6 +124,7 @@
 .stats__slider-icon {
   margin: 0;
   padding: 0;
+  border: none;
 
   &:default {
     .stats__slider-height-scale {
@@ -156,6 +157,17 @@
     }
   }
 
+  &:focus {
+    .stats__slider-height-scale,
+    .stats__slider-ring-scale {
+      outline: 1px solid #000000;
+    }
+
+    .stats__slider-arrows {
+      outline: none;
+    }
+  }
+
   &:active {
     .stats__slider-height-scale {
       background-color: #5eaa2f;
@@ -185,8 +197,8 @@
 .stats__slider-arrows {
   margin: 0;
   position: absolute;
-  left: 128px;
-  top: 119px;
+  left: 6px;
+  top: 10px;
   width: 24px;
   height: 18px;
   color: #666666;
@@ -273,7 +285,7 @@
     line-height: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
     width: 174px;
   }
 
@@ -297,11 +309,6 @@
   .stats__slider-height-scale {
     height: 512px;
     left: 278px;
-  }
-
-  .stats__slider-arrows {
-    left: 268px;
-    top: 247px;
   }
 
   .stats__slider-ring-scale {
