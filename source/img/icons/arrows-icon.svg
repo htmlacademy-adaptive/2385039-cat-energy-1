@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol viewBox="0 0 24 18" id="arrows-icon" width="24" height="18" fill="currentColor">
+    <path fill="currentColor" d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z"/>
+  </symbol>
+</svg>

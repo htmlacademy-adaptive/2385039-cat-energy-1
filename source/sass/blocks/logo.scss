@@ -70,6 +70,10 @@
     height: 50px;
     display: flex;
   }
+
+  .logo__text--footer {
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

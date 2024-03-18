@@ -9,6 +9,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import browser from 'browser-sync';
 
 // Styles
@@ -71,17 +72,17 @@ const createWebp = () => {
   // SVG
 
 export const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/{sprite.svg,logo.svg,htmlacademy.svg}'])
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
 }))
-/*.pipe(rename('sprite.svg'))*/
+.pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
 
@@ -92,6 +93,7 @@ export const copy = (done) => {
   gulp.src([
   'source/fonts/**/*.{woff2,woff}',
   'source/*.ico',
+  'source/manifest.webmanifest',
   ], {
   base: 'source'
   })
@@ -120,7 +122,11 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//Изучить еще этот момент (код написан Колей)
+export const build = gulp.series(
+  optimizeImages, styles, html, scripts, createWebp, svg, sprite, copy
+);
 
 export default gulp.series(
-  optimizeImages, styles, html, scripts, copyImages, createWebp, svg, copy, server, watcher
+  styles, html, scripts, copyImages, createWebp, svg, sprite, copy, server, watcher
 );
