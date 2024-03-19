@@ -10,6 +10,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -101,6 +102,12 @@ export const copy = (done) => {
   done();
   }
 
+  // Clean
+
+export const clean = () => {
+  return del('build');
+  };
+
 // Server
 
 const server = (done) => {
@@ -122,11 +129,15 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-//Изучить еще этот момент (код написан Колей)
+// Build
+
 export const build = gulp.series(
-  optimizeImages, styles, html, scripts, createWebp, svg, sprite, copy
+  clean, copy, optimizeImages, styles, html, scripts, svg, sprite, createWebp
 );
 
+// Default
+
 export default gulp.series(
-  styles, html, scripts, copyImages, createWebp, svg, sprite, copy, server, watcher
+  clean, copy, styles, html, scripts, svg, sprite, copyImages, createWebp, server, watcher
 );
+
