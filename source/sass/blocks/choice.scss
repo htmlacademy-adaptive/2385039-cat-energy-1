@@ -52,7 +52,7 @@
 .choice__item--weight-gain::before {
   content: "";
   position: absolute;
-  background-image: url("../img/sprite.svg#cat-pro.svg");
+  background-image: url("../img/sprite.svg#cat-pro");
   background-repeat: no-repeat;
   width: 67px;
   height: 53px;
@@ -105,7 +105,7 @@
   position: absolute;
   width: 32px;
   height: 10px;
-  background-image: url("../img/sprite.svg#icon-arrow.svg");
+  background-image: url("../img/sprite.svg#icon-arrow");
   background-repeat: no-repeat;
   top: 50%;
   transform: translateY(-50%);

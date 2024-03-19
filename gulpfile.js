@@ -9,7 +9,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+import { stacksvg } from 'gulp-stacksvg';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -83,9 +83,7 @@ gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
 .pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
+.pipe(stacksvg({ output: `sprite` }))
 .pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
