@@ -82,10 +82,8 @@ gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
-.pipe(svgo())
-.pipe(stacksvg({ output: `sprite` }))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
+.pipe(stacksvg())
+.pipe(gulp.dest('build/img/icons'));
 }
 
 
