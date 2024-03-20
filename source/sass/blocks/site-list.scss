@@ -34,6 +34,23 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,6 +76,14 @@
   .site-list__catalog-current,
   .site-list__item--current {
     border-bottom: 2px solid #68b738;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   .site-list__link {

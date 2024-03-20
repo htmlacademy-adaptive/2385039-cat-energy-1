@@ -31,6 +31,12 @@
     transition-duration: 0.3s;
   }
 
+  &:focus {
+    color: #68b738;
+    transition-duration: 0.3s;
+    outline: none;
+  }
+
   &:active {
     color: #68b738;
     opacity: 0.3;

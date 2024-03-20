@@ -72,6 +72,11 @@
   font-style: inherit;
   font-size: 16px;
   line-height: 18px;
+
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
+  }
 }
 
 
@@ -127,6 +132,11 @@
   cursor: pointer;
 }
 
+.selection__program-item input:focus {
+  border: 1px solid #cdcdcd;
+  outline: none;
+}
+
 .selection__program-description,
 .selection__additionally-description {
   margin: 0;
@@ -147,12 +157,18 @@
 
 
 .selection__program-input:checked {
-  background-image: url("../img/selection/radio-checked.svg");
+  background-image: url("../img/icons/stack.svg#radio-checked");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   border: none;
   box-sizing: border-box;
+
+
+  &:focus {
+    border: 1px solid #cdcdcd;
+    outline: none;
+  }
 }
 
 
@@ -191,23 +207,31 @@
 .selection__form-email::after {
   content: "";
   position: absolute;
-  background-image: url("../img/selection/email-vector.svg");
-  background-repeat: no-repeat;
+  mask-image: url("../img/icons/stack.svg#email-vector");
+  mask-repeat: no-repeat;
   width: 17px;
   height: 13px;
   right: 15px;
-  background-position: center;
+  mask-position: center;
+  background-color: #222222;
+
+  &:focus {
+    mask-image: url("../img/icons/stack.svg#email-vector");
+    background-color: #68b738;
+  }
 }
+
 
 .selection__form-phone::after {
   content: "";
   position: absolute;
-  background-image: url("../img/selection/phone-vector.svg");
-  background-repeat: no-repeat;
+  mask-image: url("../img/icons/stack.svg#phone-vector");
+  mask-repeat: no-repeat;
   width: 15px;
   height: 15px;
   right: 15px;
-  background-position: center;
+  mask-position: center;
+  background-color: #222222;
 }
 
 .selection__contact-wrapper,
@@ -223,6 +247,7 @@
   margin: 0;
   padding: 14px;
   font-family: inherit;
+  color: #444444;
 }
 
 .selection__form-textarea::placeholder {
@@ -265,12 +290,17 @@
 }
 
 .selection__additionally-input:checked {
-  background-image: url("../img/selection/checkbox-checked.svg");
+  background-image: url("../img/icons/stack.svg#checkbox-checked");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   border: none;
   box-sizing: border-box;
+
+  &:focus {
+    border: 1px solid #cdcdcd;
+    outline: none;
+  }
 }
 
 .selection__button {
@@ -369,7 +399,7 @@
   .selection__program-input:checked {
     width: 40px;
     height: 40px;
-    background-image: url("../img/selection/radio-checked-big.svg");
+    background-image: url("../img/icons/stack.svg#radio-checked-big");
   }
 
   .selection__form-contact {
