@@ -98,6 +98,10 @@
   text-transform: uppercase;
   position: relative;
   max-width: 140px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .choice__link::after {

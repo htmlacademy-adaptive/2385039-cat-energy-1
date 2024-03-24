@@ -17,18 +17,15 @@
   padding: 0;
   width: 33px;
   height: 38px;
-}
-
-.logo__text {
-  color: #111111;
+  cursor: pointer;
 
   &:hover {
-    color: #3e3e3e;
+    opacity: 0.8;
     transition-duration: 0.3s;
   }
 
   &:active {
-    color: #6b6b6b;
+    opacity: 0.6;
   }
 }
 
@@ -38,6 +35,16 @@
   width: 101px;
   height: 18px;
   display: flex;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__text--footer {
@@ -46,6 +53,22 @@
   width: 128px;
   height: 24px;
   display: block;
+  color: #111111;
+  cursor: pointer;
+
+
+  &:hover {
+    color: #3e3e3e;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+
+  &:focus {
+    color: #3e3e3e;
+  }
 }
 
 @media (min-width: $tablet-width) {

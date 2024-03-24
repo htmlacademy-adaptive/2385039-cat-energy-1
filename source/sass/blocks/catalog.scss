@@ -141,6 +141,12 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    color: #444444;
+    background-color: #f2f2f2;
+  }
 }
 
 .catalog__additionally {
@@ -239,6 +245,15 @@
   text-transform: uppercase;
   text-decoration: none;
   display: block;
+
+  &:hover {
+    background-color: #5eaa2f;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 

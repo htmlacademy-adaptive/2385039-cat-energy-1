@@ -21,17 +21,10 @@
   height: 24px;
   background-image: url("../img/main-nav/nav__toggle-close.svg");
   background-repeat: no-repeat;
+}
 
-  &:active {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    top: 21px;
-    right: 20px;
+.main-nav--opened {
+  .main-nav__toggle {
     width: 20px;
     height: 20px;
     background-image: url("../img/main-nav/nav__toggle-open.svg");
