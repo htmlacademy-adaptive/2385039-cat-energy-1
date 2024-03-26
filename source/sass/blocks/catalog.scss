@@ -350,13 +350,13 @@
   .catalog__image-wrapper {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 22px;
   }
 
   .catalog__image {
     width: 161px;
     height: 172px;
     margin: 20px 19px;
+    margin-bottom: 0;
   }
 
   .catalog__image-big {
@@ -561,7 +561,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 63px;
+    gap: 70px;
   }
 
   .catalog__item {
@@ -581,13 +581,12 @@
   .catalog__image-wrapper {
     width: 169px;
     margin: 0;
-    margin-bottom: 22px;
   }
 
   .catalog__image {
     width: 160px;
     height: 172px;
-    margin: 20px 19px;
+    margin: 20px 20px;
   }
 
   .catalog__image-big {

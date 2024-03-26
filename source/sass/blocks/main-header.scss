@@ -26,10 +26,10 @@
   .main-header__wrapper {
     margin: 0;
     margin-bottom: 30px;
-    padding: 62px 112px;
+    padding: 60px 112px;
     padding-bottom: 0;
     display: grid;
-    grid-template-columns: 202px 475px;
+    grid-template-columns: 202px 474px;
     gap: 0;
     width: 1440px;
     max-height: 114px;
@@ -38,6 +38,11 @@
     z-index: 2;
     position: relative;
     background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50% #ffffff 50%);
+  }
+
+  .main-header__form {
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   .main-header__catalog-wrapper {
