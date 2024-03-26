@@ -9,10 +9,10 @@
   text-decoration: none;
   box-sizing: border-box;
   cursor: pointer;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
 
   &:hover {
     background-color: #5eaa2f;
-    transition-duration: 0.3s;
   }
 
   &:active {

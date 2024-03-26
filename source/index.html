@@ -96,11 +96,9 @@
         <div class="hero__image-wrapper">
           <picture>
             <source media="(min-width: 1440px)"
-              srcset="img/main-header/index-can-desktop.jpg 1x, img/main-header/index-can-desktop@2x.jpg 2x" width="552"
-              heigth="499">
+              srcset="img/main-header/index-can-desktop.jpg 1x, img/main-header/index-can-desktop@2x.jpg 2x" width="552">
             <source media="(min-width: 768px)"
-              srcset="img/main-header/index-can-tablet.jpg 1x, img/main-header/index-can-tablet@2x.jpg 2x" width="709"
-              heigth="609">
+              srcset="img/main-header/index-can-tablet.jpg 1x, img/main-header/index-can-tablet@2x.jpg 2x" width="709">
             <img class="hero__image" width="280" height="270" src="img/main-header/index-can-mobile.jpg"
               srcset="img/main-header/index-can-mobile@2x.jpg 2x" alt="Фото продукции компании">
           </picture>
@@ -226,28 +224,28 @@
         <div class="stats-sliders">
           <picture>
             <source media="(min-width: 768px)"
-              srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x" width="280"
-              heigth="512">
+              srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x" width="280">
             <img class="stats-sliders__before" width="140" height="256" src="img/stats/cat-before.jpg"
               srcset="img/stats/cat-before@2x.jpg 2x" alt="Фото-слайдер кота до">
           </picture>
           <picture>
             <source media="(min-width: 768px)"
-              srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x" width="280" heigth="512">
+              srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x" width="280">
             <img class="stats-sliders__after" width="140" height="256" src="img/stats/cat-after.jpg"
               srcset="img/stats/cat-after@2x.jpg 2x" alt="Фото-слайдер кота после">
           </picture>
-          <button type="button" class="stats__slider-icon">
-            <div class="stats__slider-height-scale">
-            </div>
-            <div class="stats__slider-ring-scale">
-              <svg role="img" class="stats__slider-arrows" aria-hidden="true" focusable="false"
-                aria-label="Бегунок-переключатель слайдера" width="24" height="18">
+          <button class="stats__slider-icon" type="button" aria-label="Бегунок-переключатель слайдера" >
+            <span class="stats__slider-height-scale">
+            </span>
+            <span class="stats__slider-ring-scale">
+              <svg class="stats__slider-arrows" role="img" aria-hidden="true" focusable="false"
+                width="24" height="18">
                 <use href="img/icons/stack.svg#arrows-icon"></use>
               </svg>
-            </div>
+            </span>
           </button>
         </div>
+      </div>
     </section>
 
     <section class="contacts">
@@ -261,8 +259,8 @@
         <address class="contacts__address">
           <p class="address">
             ул. Большая Конюшенная, д. 19/8
-          <p>Санкт-Петербург</p>
           </p>
+          <span class="address-span">Санкт-Петербург</span>
         </address>
       </div>
       <div class="contacts__map">

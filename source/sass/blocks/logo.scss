@@ -18,10 +18,10 @@
   width: 33px;
   height: 38px;
   cursor: pointer;
+  transition: opacity 0.3s ease-in;
 
   &:hover {
     opacity: 0.8;
-    transition-duration: 0.3s;
   }
 
   &:active {
@@ -36,10 +36,10 @@
   height: 18px;
   display: flex;
   cursor: pointer;
+  transition: opacity 0.3s ease-in;
 
   &:hover {
     opacity: 0.8;
-    transition-duration: 0.3s;
   }
 
   &:active {
@@ -55,11 +55,10 @@
   display: block;
   fill: #111111;
   cursor: pointer;
-
+  transition: fill 0.3s ease-in;
 
   &:hover {
     fill: #3e3e3e;
-    transition-duration: 0.3s;
   }
 
   &:active {

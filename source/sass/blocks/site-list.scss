@@ -34,6 +34,15 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: rgb(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgb(0, 0, 0, 0.3);
+  }
 }
 
 .site-list__link:focus-within .main-nav__list {
@@ -41,19 +50,6 @@
   outline: 2px solid #444444;
 }
 
-.site-list__link:hover {
-  color: rgb(0, 0, 0, 0.6);
-}
-
-.site-list__link:active {
-  color: rgb(0, 0, 0, 0.3);
-}
-
-.site-list__link:focus,
-.site-list__link:focus-visible {
-  border: none;
-  outline: none;
-}
 
 @media (min-width: $tablet-width) {
   .site-list a {
@@ -78,10 +74,10 @@
   .site-list__catalog-current,
   .site-list__item--current {
     border-bottom: 2px solid #68b738;
+    transition: opacity 0.3s ease-in, border-bottom 0.3s ease-in;
 
     &:hover {
       opacity: 0.6;
-      transition-duration: 0.3s;
     }
 
     &:active {
@@ -92,21 +88,13 @@
   .site-list__link {
     font-size: 18px;
     line-height: 24px;
-
-    &:hover {
-      color: rgb(0, 0, 0, 0.6);
-      transition-duration: 0.3s;
-    }
-
-    &:active {
-      color: rgb(0, 0, 0, 0.3);
-    }
   }
 
   .site-list__link-catalog {
+    transition: color 0.3s ease-in;
+
     &:hover {
       color: rgb(0, 0, 0, 0.6);
-      transition-duration: 0.3s;
     }
 
     &:active {
@@ -127,10 +115,10 @@
     color: #ffffff;
     font-size: 20px;
     line-height: normal;
+    transition: color 0.3s ease-in;
 
     &:hover {
       color: rgb(255, 255, 255, 0.6);
-      transition-duration: 0.3s;
     }
 
     &:active {
@@ -141,10 +129,10 @@
 
   .site-list__item--current {
     border-bottom: 2px solid #ffffff;
+    transition: opacity 0.3s ease-in, border-bottom 0.3s ease-in;
 
     &:hover {
       opacity: 0.6;
-      transition-duration: 0.3s;
     }
 
     &:active {
@@ -154,10 +142,10 @@
 
   .site-list__link-catalog {
     color: #000000;
+    transition: color 0.3s ease-in;
 
     &:hover {
       color: rgb(0, 0, 0, 0.6);
-      transition-duration: 0.3s;
     }
 
     &:active {

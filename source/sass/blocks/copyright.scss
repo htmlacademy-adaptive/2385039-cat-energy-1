@@ -20,10 +20,6 @@
   height: 34px;
   color: #666666;
 
-  &:hover {
-    transition-duration: 0.3s;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -35,10 +31,10 @@
   width: 27px;
   height: 34px;
   color: #666666;
+  transition: color 0.3s ease-in;
 
   &:hover {
     color: #68b738;
-    transition-duration: 0.3s;
   }
 
   &:active {

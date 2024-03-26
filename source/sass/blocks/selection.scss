@@ -76,6 +76,7 @@
   font-style: inherit;
   font-size: 16px;
   line-height: 18px;
+  transition: outline 0.3s ease-in;
 
   &:hover {
     outline: 1px solid #cdcdcd;
@@ -131,8 +132,7 @@
 }
 
 .selection__program-item input,
-.selection__additionally-item input,
-.selection__additionally-item:checked input {
+.selection__additionally-item input {
   appearance: none;
   margin: 0;
   padding: 0;
@@ -156,10 +156,10 @@
   width: 30px;
   height: 30px;
   box-sizing: border-box;
+  transition: outline-color 0.3s ease-in;
 
   &:hover {
     outline-color: #bababa;
-    transition-duration: 0.3s;
   }
 
   &:disabled {
@@ -191,10 +191,10 @@
   width: 30px;
   height: 30px;
   box-sizing: border-box;
+  transition: outline-color 0.3s ease-in;
 
   &:hover {
     outline-color: #bababa;
-    transition-duration: 0.3s;
   }
 
   &:disabled {

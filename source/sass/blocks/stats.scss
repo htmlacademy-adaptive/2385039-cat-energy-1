@@ -129,42 +129,31 @@
   &:default {
     .stats__slider-height-scale {
       background-color: #666666;
+      transition: background-color 0.3s ease-in;
     }
 
     .stats__slider-arrows {
       color: #666666;
+      transition: color 0.3s ease-in;
     }
 
     .stats__slider-ring-scale {
       border-color: #666666;
+      transition: border-color 0.3s ease-in;
     }
   }
 
   &:hover {
     .stats__slider-height-scale {
       background-color: #68b738;
-      transition-duration: 0.3s;
     }
 
     .stats__slider-arrows {
       color: #68b738;
-      transition-duration: 0.3s;
     }
 
     .stats__slider-ring-scale {
       border-color: #68b738;
-      transition-duration: 0.3s;
-    }
-  }
-
-  &:focus {
-    .stats__slider-height-scale,
-    .stats__slider-ring-scale {
-      outline: 1px solid #000000;
-    }
-
-    .stats__slider-arrows {
-      outline: none;
     }
   }
 
@@ -348,7 +337,6 @@
 
   .stats__span {
     margin: 0;
-    /*margin-top: 58px;*/
     width: 327px;
     justify-content: space-between;
   }
