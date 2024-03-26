@@ -70,7 +70,6 @@
 @media (min-width: $tablet-width) {
   .logo__wrapper {
     width: 176px;
-    justify-content: space-between;
     align-items: center;
     padding: 0;
     gap: 13px;
@@ -99,16 +98,21 @@
   .logo__wrapper {
     margin: 0;
     padding: 0;
+    width: 202px;
+    min-width: 59px;
+    gap: 14px;
   }
 
   .logo__icon {
     width: 70px;
-    height: 51px;
+    height: 59px;
   }
 
   .logo__text--header {
-    padding: 19px 0;
+    padding: 0;
+    align-items: center;
     width: 118px;
-    height: 59px;
+    height: 21px;
+    text-align: center;
   }
 }

@@ -54,5 +54,13 @@
 @media (min-width: $tablet-width) {
   .social__list {
     margin: 0;
+    margin-left: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin: 0;
+    margin-left: 416px;
   }
 }
