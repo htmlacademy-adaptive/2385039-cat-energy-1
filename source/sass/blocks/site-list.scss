@@ -10,12 +10,14 @@
   border-bottom: none;
   position: relative;
   display: flex;
-  padding-top: 24px;
+  padding-top: 22px;
   padding-bottom: 24px;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  max-height: 66px;
 }
+
 
 .site-list:last-child {
   border-bottom: 1px solid #e6e6e6;
@@ -32,7 +34,7 @@
   color: #000000;
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 30px;
   text-transform: uppercase;
   transition: color 0.3s ease-in;
 
