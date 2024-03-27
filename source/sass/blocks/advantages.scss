@@ -4,14 +4,14 @@
 }
 
 .advantages__wrapper {
-  margin: 0 auto 49px;
+  margin: 0 auto 47px;
   padding: 0;
   width: 280px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0;
   color: #000000;
   font-size: 36px;
@@ -93,7 +93,7 @@
     display: grid;
     grid-template-columns: repeat(2, 250px);
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 135px;
     width: 708px;
   }
 
@@ -103,7 +103,7 @@
     padding-bottom: 57px;
     position: relative;
     flex-direction: column;
-    gap: 40px;
+    gap: 31px;
   }
 
   .advantages__item::before {

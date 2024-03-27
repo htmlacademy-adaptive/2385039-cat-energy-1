@@ -7,10 +7,12 @@
   margin: 0;
   padding: 0 20px;
   padding-top: 25px;
-  width: 320px;
+  width: 100%;
   background-color: #eaeaea;
   display: flex;
   flex-direction: column;
+  background-size: 100%;
+  max-width: 1440px;
 }
 
 .stats__title {
@@ -37,6 +39,7 @@
 
 .stats__list {
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
   width: 280px;
   display: grid;
@@ -71,7 +74,7 @@
 
 .stats__description {
   margin: 0 10px;
-  margin-bottom: -12px;
+  margin-bottom: -15px;
   padding: 0;
   max-width: 77px;
   color: #444444;
@@ -88,7 +91,7 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  padding-left: 46px;
+  padding-left: 49px;
   color: #000000;
   text-align: center;
   font-size: 14px;
@@ -106,7 +109,7 @@
 .stats-sliders {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -250,7 +253,7 @@
 
   .stats__number {
     padding-top: 15px;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -266,21 +269,23 @@
 
   .stats__span {
     margin: 0;
-    margin-left: 167px;
-    margin-top: 11px;
+    margin-left: 166px;
     padding: 0;
+    padding-top: 6px;
     text-align: end;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 174px;
+    gap: 0;
   }
 
   .stats-sliders {
     margin: 0 auto;
-    margin-top: 99px;
+    margin-top: 90px;
     margin-bottom: 101px;
     padding: 0;
     width: 560px;
@@ -310,13 +315,14 @@
   .stats__wrapper {
     position: relative;
     margin: 0;
-    padding: 0 110px 75px;
+    padding: 0 110px;
+    padding-bottom: 57px;
     width: 1440px;
-    background: linear-gradient(to top, #f2f2f2 462px, #ffffff 75px);
+    background: linear-gradient(to top, #f2f2f2 464px, #ffffff 75px);
   }
 
   .stats__title {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
   }
 
   .stats__info {
@@ -327,7 +333,7 @@
   .stats__list-wrapper {
     width: 436px;
     flex-wrap: wrap;
-    gap: 59px;
+    gap: 50px;
   }
 
   .stats__description {
@@ -338,6 +344,7 @@
   .stats__span {
     margin: 0;
     width: 327px;
+    flex-direction: row;
     justify-content: space-between;
   }
 

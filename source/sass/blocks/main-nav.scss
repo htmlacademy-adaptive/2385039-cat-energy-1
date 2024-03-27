@@ -52,8 +52,8 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    gap: 33px;
-    width: 436px;
+    gap: 34px;
+    width: 438px;
     flex-wrap: wrap;
   }
 }
@@ -65,12 +65,13 @@
 
   .main-nav__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 33px;
+    grid-template-columns: 71px repeat(2, 171px);
     justify-content: start;
+    width: 478px;
   }
 
   .main-nav__list {
     width: 478px;
+    gap: 32px;
   }
 }

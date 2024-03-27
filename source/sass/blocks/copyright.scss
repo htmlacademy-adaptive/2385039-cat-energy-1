@@ -45,9 +45,11 @@
 
 @media (min-width: $tablet-width) {
   .copyright__wrapper {
-    width: 164px;
+    width: 168px;
     margin: 0;
-    margin-left: 280px;
+    margin-left: 285px;
+    justify-content: flex-start;
+    gap: 25px;
   }
 }
 

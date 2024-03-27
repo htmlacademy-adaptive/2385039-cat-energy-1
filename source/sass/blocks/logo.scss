@@ -55,15 +55,6 @@
   display: block;
   fill: #111111;
   cursor: pointer;
-  transition: fill 0.3s ease-in;
-
-  &:hover {
-    fill: #3e3e3e;
-  }
-
-  &:active {
-    fill: #6b6b6b;
-  }
 }
 
 @media (min-width: $tablet-width) {

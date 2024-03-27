@@ -55,10 +55,10 @@
   .site-list a {
     border: none;
     padding: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
     width: auto;
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
   }
 
   .site-list:last-child {
@@ -107,14 +107,14 @@
 @media (min-width: $desktop-width) {
   .site-list a {
     background-color: inherit;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 7px;
   }
 
   .site-list__link {
     color: #ffffff;
     font-size: 20px;
-    line-height: normal;
+    line-height: 30px;
     transition: color 0.3s ease-in;
 
     &:hover {
