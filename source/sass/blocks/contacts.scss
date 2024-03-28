@@ -81,9 +81,9 @@
     margin: 0;
     margin-top: 95px;
     margin-left: 110px;
-    padding: 60px 80px;
-    padding-bottom: 60px;
-    width: 566px;
+    padding: 57px 80px;
+    padding-bottom: 59px;
+    width: 567px;
     position: absolute;
     z-index: 0;
     background-color: #ffffff;
@@ -91,6 +91,7 @@
 
   .contacts__address {
     text-align: left;
+    margin-top: -1px;
   }
 
   .contacts__map iframe {

@@ -5,7 +5,7 @@
 
 .choice__wrapper {
   margin: 20px auto;
-  margin-top: 0;
+  margin-top: 18px;
   padding: 0;
   width: 280px;
   display: flex;
@@ -23,7 +23,8 @@
 
 .choice__item {
   margin: 0;
-  padding: 2px 20px 20px 20px;
+  margin-top: 2px;
+  padding: 0 20px 19px;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@
   width: 50px;
   height: 53px;
   top: 21px;
-  left: 22px;
+  left: 21px;
 }
 
 .choice__item--weight-gain {
@@ -58,14 +59,14 @@
   width: 67px;
   height: 53px;
   top: 22px;
-  left: 15px;
+  left: 14px;
 }
 
 
 .choice__title {
   margin: 30px 0 29px 0;
   padding: 0;
-  padding-left: 71px;
+  padding-left: 70px;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
@@ -77,7 +78,7 @@
 .choice__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   padding-right: 13px;
   width: 240px;
   color: #444444;
@@ -162,7 +163,7 @@
   }
 
   .choice__description {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     padding-right: 0;
     width: 340px;
     font-size: 16px;
@@ -183,7 +184,7 @@
 @media (min-width: $desktop-width) {
   .choice__wrapper {
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
     width: 1220px;
   }
 
@@ -195,7 +196,7 @@
 
   .choice__item {
     margin: 0;
-    padding: 3px 0 62px 52px;
+    padding: 3px 0 60px 53px;
     width: 570px;
   }
 
@@ -203,23 +204,23 @@
     width: 101px;
     height: 101px;
     top: 44px;
-    left: 51px;
+    left: 52px;
   }
 
   .choice__item--weight-gain::before {
     width: 136px;
     height: 100px;
-    top: 45px;
+    top: 46px;
     left: 35px;
   }
 
   .choice__title {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
     padding-left: 161px;
   }
 
   .choice__description {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     padding: 0;
     width: 457px;
   }

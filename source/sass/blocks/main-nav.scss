@@ -15,7 +15,7 @@
   padding: 0;
   cursor: pointer;
   border: none;
-  top: 21px;
+  top: 23px;
   right: 20px;
   width: 24px;
   height: 24px;
@@ -35,6 +35,7 @@
 .main-nav--opened .main-nav__list {
   display: block;
   z-index: 2;
+  margin-top: -3px;
 }
 
 
