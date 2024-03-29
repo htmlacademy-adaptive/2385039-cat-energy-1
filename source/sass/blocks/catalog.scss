@@ -1,6 +1,7 @@
 .catalog__wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-top: -4px;
   padding: 0;
 }
 
@@ -11,9 +12,8 @@
 
 .catalog__item {
   list-style-type: none;
-  padding: 20px 20px 27px 20px;
+  padding: 22px 20px;
   border-top: 1px solid #d9d9d9;
-  max-height: 209px;
 }
 
 .catalog__item-wrapper {
@@ -35,13 +35,19 @@
 }
 
 .catalog__image {
+  margin: 0;
+  margin-top: 6px;
+  padding: 0;
   width: 68px;
   height: 87px;
 }
 
 .catalog__image-big {
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
   width: 84px;
-  height: 100px;
+  height: 101px;
 }
 
 .catalog__card {
@@ -53,7 +59,7 @@
 .catalog__link {
   margin: 0;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   width: 76px;
   color: #222222;
   font-size: 16px;
@@ -68,8 +74,8 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  margin-top: 3px;
   padding: 0;
+  padding-bottom: 1px;
 }
 
 .catalog__description-wrapper {
@@ -85,7 +91,7 @@
   height: 40px;
   border: none;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 4px;
   padding: 10px 0;
   cursor: pointer;
 }
@@ -102,8 +108,8 @@
 }
 
 .catalog__more-button {
-  margin: 5px auto;
-  margin-bottom: 23px;
+  margin: 4px auto;
+  margin-bottom: 25px;
   padding: 0;
   width: 30px;
   height: 30px;
@@ -172,7 +178,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 25px auto 34px;
+  margin: 26px auto 35px;
   width: 280px;
   position: relative;
 }
@@ -193,9 +199,7 @@
 }
 
 .catalog__additionally-item {
-  padding: 0;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding: 14px 0 18px;
   list-style-type: none;
   border-top: 1px solid #d9d9d9;
 }
@@ -206,7 +210,7 @@
 
 .catalog__additionally-link {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   padding: 0;
   font-weight: 400;
   font-size: 16px;
@@ -307,7 +311,7 @@
   display: flex;
   width: 165px;
   margin: 0;
-  margin-left: 58px;
+  margin-left: 56px;
   padding: 0;
   padding-top: 187px;
 }
@@ -411,8 +415,9 @@
   .catalog__item--more {
     outline: 2px solid #f2f2f2;
     background-color: #ffffff;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 20px 35px 20px;
     margin-top: 82px;
+    margin-bottom: 2px;
   }
 
   .catalog__item-more-wrapper {
@@ -449,6 +454,16 @@
     line-height: 20px;
   }
 
+
+  .catalog__additionally {
+    margin-bottom: 2px;
+  }
+
+  .catalog__additionally-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .catalog__additionally-title {
     font-size: 36px;
     line-height: 36px;
@@ -478,10 +493,6 @@
     right: -30px;
   }
 
-  .catalog__additionally-wrapper {
-    width: 708px;
-    margin: 0 auto;
-  }
 
   .catalog__additionally-list {
     margin: 0;
@@ -490,7 +501,7 @@
 
   .catalog__additionally-item {
     margin: 0;
-    padding: 27px 37px;
+    padding: 26px 39px;
     border-top: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
@@ -514,6 +525,7 @@
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+    padding-top: 2px;
   }
 
   .catalog__additionally-description-wrapper {
@@ -522,7 +534,7 @@
     padding: 0;
     border: none;
     width: 225px;
-    gap: 49px;
+    gap: 50px;
     justify-content: flex-end;
   }
 
@@ -535,7 +547,7 @@
 
   .catalog__additionally-gift {
     margin-top: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
     width: 708px;
     min-height: 200px;
     display: flex;
@@ -557,7 +569,7 @@
   .catalog__additionally-gift-slogan {
     padding-top: 71px;
     margin: 0;
-    margin-right: 125px;
+    margin-right: 121px;
     text-align: start;
   }
 }
@@ -574,13 +586,14 @@
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 70px;
+    justify-content: flex-start;
+    row-gap: 63px;
+    column-gap: 80px;
   }
 
   .catalog__item {
     border: none;
-    padding: 10px 37px 40px 37px;
+    padding: 20px 41px 40px 41px;
     width: 245px;
   }
 
@@ -598,15 +611,16 @@
   }
 
   .catalog__image {
-    width: 160px;
+    width: 161px;
     height: 172px;
-    margin: 20px 20px;
+    margin: 8px 2px 30px;
   }
 
   .catalog__image-big {
-    width: 168px;
-    height: 206px;
-    margin: 2px 16px;
+    width: 169px;
+    height: 196px;
+    margin: 0;
+    margin-bottom: 13px;
   }
 
   .catalog__card {
@@ -615,19 +629,42 @@
 
 
   .catalog__link {
-    margin: 0 auto;
-    margin-bottom: 23px;
-    width: 135px;
+    margin-top: -1px;
+    margin-bottom: 18px;
+    margin-left: 13px;
+    padding-bottom: 0;
+    width: 140px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    justify-content: center;
+  }
+
+  .catalog__description {
+    padding: 0;
   }
 
   .catalog__description-wrapper {
-    width: 169px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    width: 168px;
+    margin-bottom: 3px;
+    margin-top: 2px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__description-wrapper:last-child {
+    padding: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .catalog__property {
+    margin: 0;
+    padding: 0;
+  }
+
+  .catalog__value {
+    margin: 0;
+    padding: 0;
   }
 
   .catalog__order {
@@ -637,7 +674,7 @@
   }
 
   .catalog__item--more {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 39px 39px;
   }
 
   .catalog__item-more-wrapper {
@@ -653,13 +690,14 @@
   }
 
   .catalog__more {
-    width: 169px;
+    width: 168px;
     font-size: 16px;
     line-height: 20px;
   }
 
   .catalog__additionally-title {
     width: 1220px;
+    margin-bottom: 72px;
     padding: 0;
   }
 
@@ -677,11 +715,12 @@
     width: 1220px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 87px;
+    margin-bottom: 93px;
   }
 
   .catalog__additionally-item {
     padding: 0;
+    padding-left: 3px;
     border-left: none;
     border-right: none;
     width: 895px;
@@ -693,12 +732,13 @@
   }
 
   .catalog__additionally-link {
-    margin: 25px 0;
+    margin: 20px 0;
   }
 
   .catalog__additionally-description-wrapper {
-    margin-top: 25px;
-    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 23px;
+    margin-left: 2px;
     display: grid;
     grid-template-columns: 135px 45px;
     width: 285px;
@@ -717,8 +757,8 @@
   }
 
   .catalog__additionally-gif-wrapper::before {
-    top: 56px;
-    left: 83px;
+    top: 57px;
+    left: 84px;
   }
 
   .catalog__additionally-gift-image {
@@ -727,9 +767,9 @@
   }
 
   .catalog__additionally-gift-slogan {
-    padding-top: 185px;
+    padding-top: 187px;
     margin: 0;
-    margin-right: 42px;
+    margin-right: 40px;
     text-align: center;
   }
 }
