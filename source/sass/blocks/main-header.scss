@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.main-header__form {
+  margin-bottom: -5px;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
@@ -19,6 +23,11 @@
     align-items: center;
     margin: 25px 30px 63px 30px;
     max-height: 60px;
+  }
+
+  .main-header__form {
+    column-gap: 96px;
+    margin-top: 26px;
   }
 }
 
@@ -41,11 +50,12 @@
   }
 
   .main-header__form {
-    padding-top: 20px;
+    margin-bottom: 35px;
+    padding-top: 22px;
     padding-bottom: 40px;
   }
 
-  .main-header__catalog-wrapper {
+  .main-header__catalog {
     margin-bottom: 74px;
   }
 }
