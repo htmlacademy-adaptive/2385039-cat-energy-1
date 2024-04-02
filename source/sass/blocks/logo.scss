@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-.logo__wrapper {
+.logo__wrapper,
+.logo-link {
   margin: 0;
   padding: 0;
   display: flex;
@@ -59,7 +60,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__wrapper {
+  .logo__wrapper,
+  .logo-link {
     width: 176px;
     align-items: center;
     padding: 0;
@@ -86,7 +88,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo__wrapper {
+  .logo__wrapper,
+  .logo-link {
     margin: 0;
     padding: 0;
     width: 205px;
