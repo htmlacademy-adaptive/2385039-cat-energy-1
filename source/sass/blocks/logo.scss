@@ -101,9 +101,10 @@
 
   .logo__text--header {
     margin: 0;
-    padding: 19px 0;
+    padding: 0;
+    padding-bottom: 11px;
     width: 118px;
-    min-height: 59px;
+    height: 32px;
     align-items: center;
     display: flex;
   }
