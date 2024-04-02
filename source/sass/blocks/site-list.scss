@@ -10,12 +10,14 @@
   border-bottom: none;
   position: relative;
   display: flex;
-  padding-top: 24px;
+  padding-top: 22px;
   padding-bottom: 24px;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  max-height: 66px;
 }
+
 
 .site-list:last-child {
   border-bottom: 1px solid #e6e6e6;
@@ -27,23 +29,37 @@
   list-style-type: none;
 }
 
-
 .site-list__link {
   color: #000000;
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 30px;
   text-transform: uppercase;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: rgb(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgb(0, 0, 0, 0.3);
+  }
 }
+
+.site-list__link:focus-within .main-nav__list {
+  border: none;
+  outline: 2px solid #444444;
+}
+
 
 @media (min-width: $tablet-width) {
   .site-list a {
     border: none;
     padding: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
     width: auto;
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
   }
 
   .site-list:last-child {
@@ -59,11 +75,32 @@
   .site-list__catalog-current,
   .site-list__item--current {
     border-bottom: 2px solid #68b738;
+    transition: opacity 0.3s ease-in, border-bottom 0.3s ease-in;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .site-list__link {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .site-list__link-catalog {
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: rgb(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgb(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -71,21 +108,49 @@
 @media (min-width: $desktop-width) {
   .site-list a {
     background-color: inherit;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 7px;
   }
 
   .site-list__link {
     color: #ffffff;
     font-size: 20px;
-    line-height: normal;
+    line-height: 30px;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: rgb(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgb(255, 255, 255, 0.3);
+    }
   }
+
 
   .site-list__item--current {
     border-bottom: 2px solid #ffffff;
+    transition: opacity 0.3s ease-in, border-bottom 0.3s ease-in;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .site-list__link-catalog {
     color: #000000;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: rgb(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgb(0, 0, 0, 0.3);
+    }
   }
 }

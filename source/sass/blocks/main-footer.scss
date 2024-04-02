@@ -6,7 +6,7 @@
 .main-footer__wrapper {
   margin: 0;
   padding: 40px 20px;
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,18 +25,18 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
-    padding: 55px 30px;
+    padding: 57px 30px;
     width: 768px;
     display: grid;
     grid-template-columns: 128px 132px 168px;
-    justify-content: space-between;
     align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    padding: 66px 110px;
+    margin-top: -5px;
+    padding: 66px 109px;
     width: 1440px;
   }
 }

@@ -3,9 +3,10 @@
   padding: 0;
 }
 
-.logo__wrapper {
+.logo__wrapper,
+.logo-link {
   margin: 0;
-  padding: 11px 20px;
+  padding: 0;
   display: flex;
   width: 320px;
   gap: 56px;
@@ -13,31 +14,39 @@
 }
 
 .logo__icon {
-  margin: 0;
+  margin: 15px 0;
+  margin-left: 20px;
   padding: 0;
   width: 33px;
   height: 38px;
-}
-
-.logo__text {
-  color: #111111;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
 
   &:hover {
-    color: #3e3e3e;
-    transition-duration: 0.3s;
+    opacity: 0.8;
   }
 
   &:active {
-    color: #6b6b6b;
+    opacity: 0.6;
   }
 }
 
 .logo__text--header {
-  padding: 0;
   margin: 0;
+  padding: 23px 0 24px 0;
   width: 101px;
-  height: 18px;
+  height: 66px;
   display: flex;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__text--footer {
@@ -46,12 +55,14 @@
   width: 128px;
   height: 24px;
   display: block;
+  fill: #111111;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .logo__wrapper {
+  .logo__wrapper,
+  .logo-link {
     width: 176px;
-    justify-content: space-between;
     align-items: center;
     padding: 0;
     gap: 13px;
@@ -70,22 +81,34 @@
     height: 50px;
     display: flex;
   }
+
+  .logo__text--footer {
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .logo__wrapper {
+  .logo__wrapper,
+  .logo-link {
     margin: 0;
     padding: 0;
+    width: 205px;
+    gap: 14px;
   }
 
   .logo__icon {
+    margin-top: -3px;
     width: 70px;
-    height: 51px;
+    height: 59px;
   }
 
   .logo__text--header {
-    padding: 19px 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 11px;
     width: 118px;
-    height: 59px;
+    height: 32px;
+    align-items: center;
+    display: flex;
   }
 }

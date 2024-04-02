@@ -10,55 +10,25 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__catalog-wrapper main-header__wrapper">
+    <div class="main-header__catalog main-header__wrapper">
       <div class="logo">
         <div class="logo__wrapper">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
-            <img class="logo__icon" width="33" height="38" src="img/logo/logo-mobile.svg"
-              alt="Логотип-иконка кота">
-          </picture>
-          <a class="logo__text logo__text--header" href="#" aria-label="Перейти на главную страницу">
-            <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="currentColor">
-              <g clip-path="url(#clip0_135_3354)">
-                <path
-                  d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z"
-                      />
-                <path
-                  d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5963 11.7692H18.493Z"
-                  />
-                <path d="M25.8427 3.15385H23.1557V0.23077H32.5602V3.07692H29.8732V17.7692H25.8427V3.15385Z"
-                      />
-                <path
-                  d="M39.752 0.23077H46.7066V2.07692H42.2019V7.84615H45.8372V9.61539H42.2019V16.0769H46.7066V17.8462H39.6729V0.23077H39.752Z"
-                      />
-                <path
-                  d="M48.7613 0.23077H50.5L55.6369 11.8462V0.23077H57.6917V17.7692H56.1111L50.8951 5.76923V17.7692H48.7613V0.23077Z"
-                      />
-                <path
-                  d="M60.0626 0.23077H67.0172V2.07692H62.5125V7.84615H66.1479V9.61539H62.5125V16.0769H67.0172V17.8462H60.0626V0.23077Z"
-                      />
-                <path
-                  d="M69.072 0.23077H72.7074C74.1375 0.134618 75.5587 0.514353 76.7379 1.30769C77.6072 2 78.0024 3.23077 78.0024 4.84616C78.0024 7.07692 77.2911 8.46154 75.7895 8.92308L78.3185 17.6923H75.8686L73.4977 9.46154H71.5219V17.6923H68.993V0.23077H69.072ZM72.5493 7.76923C73.364 7.83458 74.1761 7.61652 74.8412 7.15385C75.3154 6.76923 75.5524 6 75.5524 4.84616C75.5743 4.27296 75.4941 3.7004 75.3154 3.15385C75.1375 2.76166 74.832 2.4373 74.446 2.23077C73.9017 1.98934 73.3042 1.8836 72.7074 1.92308H71.601V7.69231H72.5493V7.76923Z"
-                      />
-                <path
-                  d="M81.1635 16.4615C80.342 15.1166 79.9564 13.5617 80.0571 12V6.15384C80.0376 5.03911 80.1705 3.9268 80.4523 2.84615C80.7167 2.03863 81.2437 1.33668 81.9538 0.846152C82.8362 0.337748 83.8542 0.0967294 84.8779 0.153844C86.5376 0.153844 87.723 0.53846 88.4343 1.38461C89.2525 2.50191 89.6438 3.86237 89.5407 5.23077V5.84615H87.1698V5.30769C87.1734 4.66346 87.1205 4.0201 87.0117 3.38461C86.9451 2.98303 86.7178 2.62348 86.3795 2.38461C85.9353 2.10082 85.4081 1.96579 84.8779 2C84.3113 1.96466 83.7504 2.12843 83.2973 2.46154C83.1114 2.61401 82.9595 2.80181 82.8508 3.01344C82.7421 3.22507 82.6789 3.45608 82.6651 3.69231C82.5609 4.37999 82.5081 5.07411 82.507 5.76923V12.3077C82.4488 13.3038 82.6105 14.3006 82.9812 15.2308C83.2973 15.8462 83.9296 16.0769 84.8779 16.0769C85.2524 16.1223 85.6323 16.0589 85.9698 15.8947C86.3073 15.7304 86.5873 15.4727 86.7746 15.1538C87.1922 14.1811 87.3812 13.1299 87.3278 12.0769V10.8462H85.036V9.07692H89.6197V17.7692H88.0391L87.802 15.7692C87.5948 16.4395 87.1634 17.0231 86.5763 17.4273C85.9892 17.8315 85.2801 18.0331 84.5618 18C83.9088 18.0374 83.2565 17.9164 82.6634 17.6479C82.0702 17.3794 81.5549 16.9717 81.1635 16.4615Z"
-                      />
-                <path
-                  d="M94.6776 11.6154L90.8052 0.30769H93.1761L95.9421 8.76923L98.6291 0.30769H101L97.1275 11.6154V17.7692H94.7566V11.6154H94.6776Z"
-                    />
-              </g>
-              <defs>
-                <clipPath id="clip0_135_3354">
-                  <rect width="101" height="18" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+          <a class="logo-link" href="index.html" aria-label="Перейти на главную страницу">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
+              <img class="logo__icon" width="33" height="38" src="img/logo/logo-mobile.svg" alt="Логотип-иконка кота">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-text-desktop.svg" width="118" height="21">
+              <img class="logo__text logo__text--header" width="101" height="18" src="img/logo/logo-text.svg"
+                alt="Логотип-ссылка">
+            </picture>
           </a>
         </div>
       </div>
@@ -68,7 +38,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list-catalog main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link-catalog site-list__link" href="index.html">
                 главная
@@ -100,16 +70,18 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-chicken-500-tablet.png 1x, img/catalog/catalog-chicken-500-tablet@2x.png 2x"
-                    width="161" heigth="172">
-                  <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-chicken-500.png"
-                    srcset="img/catalog/catalog-chicken-500@2x.png 2x" alt="Фото банки с курицей 500 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-chicken-500-tablet.png 1x, img/catalog/catalog-chicken-500-tablet@2x.png 2x"
+                      width="161">
+                    <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-chicken-500.png"
+                      srcset="img/catalog/catalog-chicken-500@2x.png 2x" alt="Фото банки с курицей 500 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy PRO 500 г
                 </a>
                 <dl class="catalog__description">
@@ -148,20 +120,22 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)"
-                    srcset="img/catalog/catalog-chicken-1000-desktop.png 1x, img/catalog/catalog-chicken-1000-desktop@2x.png 2x"
-                    width="172" heigth="196">
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-chicken-1000-tablet.png 1x, img/catalog/catalog-chicken-1000-tablet@2x.png 2x"
-                    width="168" heigth="206">
-                  <img class="catalog__image catalog__image-big" width="84" height="100"
-                    src="img/catalog/catalog-chicken-1000.png" srcset="img/catalog/catalog-chicken-1000@2x.png 2x"
-                    alt="Фото банки с курицей 1000 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/catalog/catalog-chicken-1000-desktop.png 1x, img/catalog/catalog-chicken-1000-desktop@2x.png 2x"
+                      width="172">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-chicken-1000-tablet.png 1x, img/catalog/catalog-chicken-1000-tablet@2x.png 2x"
+                      width="168">
+                    <img class="catalog__image catalog__image-big" width="84" height="100"
+                      src="img/catalog/catalog-chicken-1000.png" srcset="img/catalog/catalog-chicken-1000@2x.png 2x"
+                      alt="Фото банки с курицей 1000 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy PRO 1000 г
                 </a>
                 <dl class="catalog__description">
@@ -201,16 +175,18 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-fish-500-tablet.png 1x, img/catalog/catalog-fish-500-tablet@2x.png 2x"
-                    width="161" heigth="172">
-                  <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-fish-500.png"
-                    srcset="img/catalog/catalog-fish-500@2x.png 2x" alt="Фото банки с рыбой 500 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-fish-500-tablet.png 1x, img/catalog/catalog-fish-500-tablet@2x.png 2x"
+                      width="161">
+                    <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-fish-500.png"
+                      srcset="img/catalog/catalog-fish-500@2x.png 2x" alt="Фото банки с рыбой 500 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy PRO 500 г
                 </a>
                 <dl class="catalog__description">
@@ -249,20 +225,22 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)"
-                    srcset="img/catalog/catalog-fish-1000-desktop.png 1x, img/catalog/catalog-fish-1000-desktop@2x.png 2x"
-                    width="172" heigth="196">
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-fish-1000-tablet.png 1x, img/catalog/catalog-fish-1000-tablet@2x.png 2x"
-                    width="168" heigth="206">
-                  <img class="catalog__image catalog__image-big" width="84" height="100"
-                    src="img/catalog/catalog-fish-1000.png" srcset="img/catalog/catalog-fish-1000@2x.png 2x"
-                    alt="Фото банки с рыбой 1000 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/catalog/catalog-fish-1000-desktop.png 1x, img/catalog/catalog-fish-1000-desktop@2x.png 2x"
+                      width="172">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-fish-1000-tablet.png 1x, img/catalog/catalog-fish-1000-tablet@2x.png 2x"
+                      width="168">
+                    <img class="catalog__image catalog__image-big" width="84" height="100"
+                      src="img/catalog/catalog-fish-1000.png" srcset="img/catalog/catalog-fish-1000@2x.png 2x"
+                      alt="Фото банки с рыбой 1000 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy PRO 1000 г
                 </a>
                 <dl class="catalog__description">
@@ -301,16 +279,18 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-buckwheat-500-tablet.png 1x, img/catalog/catalog-buckwheat-500-tablet@2x.png 2x"
-                    width="161" heigth="172">
-                  <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-buckwheat-500.png"
-                    srcset="img/catalog/catalog-buckwheat-500-tablet@2x.png 2x" alt="Фото банки с гречкой 500 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-buckwheat-500-tablet.png 1x, img/catalog/catalog-buckwheat-500-tablet@2x.png 2x"
+                      width="161">
+                    <img class="catalog__image" width="68" height="86" src="img/catalog/catalog-buckwheat-500.png"
+                      srcset="img/catalog/catalog-buckwheat-500-tablet@2x.png 2x" alt="Фото банки с гречкой 500 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy sLIM 500 г
                 </a>
                 <dl class="catalog__description">
@@ -349,20 +329,22 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)"
-                    srcset="img/catalog/catalog-buckwheat-1000-desktop.png 1x, img/catalog/catalog-buckwheat-1000-desktop@2x.png 2x"
-                    width="172" heigth="196">
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-buckwheat-1000-tablet.png 1x, img/catalog/catalog-buckwheat-1000-tablet@2x.png 2x"
-                    width="168" heigth="206">
-                  <img class="catalog__image catalog__image-big" width="84" height="100"
-                    src="img/catalog/catalog-buckwheat-1000.png" srcset="img/catalog/catalog-buckwheat-1000@2x.png 2x"
-                    alt="Фото банки с гречкой 1000 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/catalog/catalog-buckwheat-1000-desktop.png 1x, img/catalog/catalog-buckwheat-1000-desktop@2x.png 2x"
+                      width="172">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-buckwheat-1000-tablet.png 1x, img/catalog/catalog-buckwheat-1000-tablet@2x.png 2x"
+                      width="168">
+                    <img class="catalog__image catalog__image-big" width="84" height="100"
+                      src="img/catalog/catalog-buckwheat-1000.png" srcset="img/catalog/catalog-buckwheat-1000@2x.png 2x"
+                      alt="Фото банки с гречкой 1000 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy sLIM 1000 г
                 </a>
                 <dl class="catalog__description">
@@ -401,17 +383,18 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <div class="catalog__image-wrapper">
-                <picture>
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/catalog-rice-500-tablet.png 1x, img/catalog/catalog-rice-500-tablet@2x.png 2x"
-                    width="163" heigth="174">
-                  <img class="catalog__image catalog__image-big" width="72" height="84"
-                    src="img/catalog/catalog-rice-500.png" srcset="img/catalog/catalog-rice-500@2x.png 2x"
-                    alt="Фото банки с рисом 500 грамм">
-                </picture>
+                <a class="catalog__image-link" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/catalog-rice-500-tablet.png 1x, img/catalog/catalog-rice-500-tablet@2x.png 2x"
+                      width="163">
+                    <img class="catalog__image" width="72" height="84" src="img/catalog/catalog-rice-500.png"
+                      srcset="img/catalog/catalog-rice-500@2x.png 2x" alt="Фото банки с рисом 500 грамм">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__card">
-                <a class="catalog__link">
+                <a class="catalog__link" href="#">
                   Cat Energy slim 500 г
                 </a>
                 <dl class="catalog__description">
@@ -449,9 +432,9 @@
 
           <li class="catalog__item--more catalog__item">
             <div class="catalog__item-more-wrapper">
-              <button class="catalog__more-button">
-                <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30">
-                  <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
+              <button class="catalog__more-button" type="button" aria-label="Показать больше товаров">
+                <svg role="img" width="30" height="30" aria-hidden="true" focusable="false">
+                  <use href="img/icons/stack.svg#plus"></use>
                 </svg>
               </button>
               <p class="catalog__more-title">
@@ -559,15 +542,15 @@
               <picture>
                 <source media="(min-width: 1440px)"
                   srcset="img/catalog/catalog-gift-desktop.png 1x, img/catalog/catalog-gift-desktop@2x.png 2x"
-                  width="245" heigth="288">
+                  width="245">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/catalog-gift-tablet.png 1x, img/catalog/catalog-gift-tablet@2x.png 2x" width="707"
-                  heigth="200">
+                  srcset="img/catalog/catalog-gift-tablet.png 1x, img/catalog/catalog-gift-tablet@2x.png 2x"
+                  width="707">
                 <img class="catalog__additionally-gift-image" width="280" height="290" alt="Подарок"
                   srcset="img/catalog/catalog-gift@2x.png 2x" src="img/catalog/catalog-gift.png">
               </picture>
               <p class="catalog__additionally-gift-slogan">
-                Закажите все и получите чехол для
+                Закажите все и&nbsp;получите чехол для
                 кота в подарок!
               </p>
             </div>
@@ -582,13 +565,13 @@
           Адрес компании
         </h2>
         <p class="contacts__slogan">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <address class="contacts__address">
           <p class="address">
             ул. Большая Конюшенная, д. 19/8
-          <p>Санкт-Петербург</p>
           </p>
+          <span>Санкт-Петербург</span>
         </address>
       </div>
       <div class="contacts__map">
@@ -598,101 +581,89 @@
         </iframe>
       </div>
     </section>
+  </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="logo">
-          <a class="logo__text logo__text--footer" href="#" aria-label="Логотип">
-            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="currentColor">
-              <path
-                d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1192 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1192 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z"
-                  />
-              <path
-                d="M19.3483 0.306396H25.0563L29.2622 23.5915H24.6557L23.8546 18.6894H20.55L19.7489 23.5915H15.0423L19.3483 0.306396ZM23.454 15.6255L22.2524 6.53618L21.0507 15.6255H23.454Z"
-                  />
-              <path d="M32.767 4.18725H29.3623V0.306396H41.2789V4.08512H37.8742V23.5915H32.767V4.18725Z"
-                    />
-              <path
-                d="M50.3916 0.306396H59.2039V2.75746H53.496V10.417H58.1024V12.766H53.496V21.3447H59.2039V23.6936H50.2915V0.306396H50.3916Z"
-                    />
-              <path
-                d="M61.8076 0.306396H64.0107L70.5198 15.7277V0.306396H73.1234V23.5915H71.1206L64.5114 7.65959V23.5915H61.8076V0.306396Z"
-                  />
-              <path
-                d="M76.1276 0.306396H84.9399V2.75746H79.2319V10.417H83.8383V12.766H79.2319V21.3447H84.9399V23.6936H76.1276V0.306396Z"
-                    />
-              <path
-                d="M87.5435 0.306296H92.1499C93.962 0.178639 95.7629 0.682798 97.2571 1.73608C98.3586 2.65523 98.8593 4.28927 98.8593 6.43396C98.8593 9.39566 97.958 11.234 96.0554 11.8467L99.2599 23.4893H96.1555L93.1513 12.5616H90.6478V23.4893H87.4434V0.306296H87.5435ZM91.9497 10.3148C92.982 10.4016 94.011 10.1121 94.8537 9.49778C95.4546 8.98715 95.755 7.96587 95.755 6.43396C95.7827 5.67295 95.6811 4.91279 95.4546 4.18715C95.2292 3.66645 94.8421 3.23582 94.353 2.96162C93.6633 2.64108 92.9062 2.50069 92.1499 2.5531H90.748V10.2127H91.9497V10.3148Z"
-                    />
-              <path
-                d="M102.865 21.8554C101.824 20.0697 101.335 18.0053 101.463 15.932V8.17025C101.438 6.69026 101.607 5.21349 101.964 3.77876C102.299 2.70664 102.967 1.77469 103.866 1.12344C104.984 0.448453 106.274 0.128462 107.571 0.204291C109.674 0.204291 111.177 0.714929 112.078 1.83833C113.115 3.32172 113.61 5.12795 113.48 6.94472V7.76174H110.476V7.04684C110.48 6.19152 110.413 5.33736 110.275 4.49365C110.191 3.96049 109.903 3.48313 109.474 3.16599C108.911 2.78921 108.243 2.60993 107.571 2.65535C106.853 2.60843 106.143 2.82587 105.569 3.26812C105.333 3.47055 105.141 3.71989 105.003 4.00086C104.865 4.28184 104.785 4.58853 104.768 4.90216C104.636 5.81517 104.569 6.73673 104.567 7.65961V16.3405C104.493 17.663 104.698 18.9863 105.168 20.2213C105.569 21.0383 106.37 21.3447 107.571 21.3447C108.046 21.405 108.527 21.3208 108.955 21.1028C109.383 20.8847 109.737 20.5425 109.975 20.1192C110.504 18.8277 110.743 17.432 110.676 16.0341V14.4H107.772V12.0511H113.58V23.5915H111.577L111.277 20.9362C111.014 21.8261 110.467 22.601 109.724 23.1376C108.98 23.6742 108.081 23.9419 107.171 23.8979C106.343 23.9475 105.517 23.7869 104.765 23.4304C104.014 23.0739 103.361 22.5327 102.865 21.8554Z"
-                    />
-              <path
-                d="M119.989 15.4212L115.082 0.408447H118.086L121.591 11.6425L124.996 0.408447H128L123.093 15.4212V23.5914H120.089V15.4212H119.989Z"
-                    />
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="logo">
+        <a class="logo__text logo__text--footer" href="index.html" aria-label="Логотип">
+          <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.6236 22.4574C0.489608 20.7815 -0.0733133 18.7722 0.0213584 16.7383V8.2617C-0.115966 6.20593 0.411707 4.16097 1.52346 2.44043C2.62499 1.11277 4.32737 0.5 6.83086 0.5C9.33436 0.5 10.9366 1.11277 11.938 2.23617C13.0252 3.65904 13.56 5.4407 13.4401 7.24043V9.28298H8.53324V6.93404C8.57287 6.23932 8.47057 5.54378 8.23282 4.89149C8.10574 4.62819 7.90433 4.40969 7.65449 4.26409C7.40465 4.11849 7.11781 4.05245 6.83086 4.07447C6.12989 4.07447 5.62919 4.27872 5.42891 4.78936C5.20237 5.515 5.10073 6.27516 5.12849 7.03617V17.9638C5.0756 18.7022 5.21373 19.4417 5.52905 20.1085C5.72933 20.6192 6.23003 20.8234 6.931 20.8234C7.63198 20.8234 8.03254 20.6192 8.23282 20.1085C8.4605 19.4183 8.56232 18.6914 8.53324 17.9638V15.5128H13.4401V17.5553C13.5419 19.3844 13.0103 21.1918 11.938 22.6617C10.9366 23.8872 9.23422 24.5 6.83086 24.5C4.42751 24.3979 2.62499 23.7851 1.6236 22.4574Z"
+              fill="#111111" />
+            <path
+              d="M19.3484 0.806396H25.0563L29.2622 24.0915H24.6558L23.8547 19.1894H20.55L19.7489 24.0915H15.0424L19.3484 0.806396ZM23.4541 16.1255L22.2524 7.03618L21.0507 16.1255H23.4541Z"
+              fill="#111111" />
+            <path d="M32.7671 4.68725H29.3623V0.806396H41.2789V4.58512H37.8742V24.0915H32.7671V4.68725Z"
+              fill="#111111" />
+            <path
+              d="M50.3916 0.806396H59.2039V3.25746H53.496V10.917H58.1024V13.266H53.496V21.8447H59.2039V24.1936H50.2915V0.806396H50.3916Z"
+              fill="#111111" />
+            <path
+              d="M61.8076 0.806396H64.0107L70.5198 16.2277V0.806396H73.1234V24.0915H71.1206L64.5114 8.15959V24.0915H61.8076V0.806396Z"
+              fill="#111111" />
+            <path
+              d="M76.1276 0.806396H84.9399V3.25746H79.2319V10.917H83.8383V13.266H79.2319V21.8447H84.9399V24.1936H76.1276V0.806396Z"
+              fill="#111111" />
+            <path
+              d="M87.5435 0.806296H92.1499C93.962 0.678639 95.7628 1.1828 97.2571 2.23608C98.3586 3.15523 98.8593 4.78927 98.8593 6.93396C98.8593 9.89566 97.958 11.734 96.0554 12.3467L99.2598 23.9893H96.1555L93.1513 13.0616H90.6478V23.9893H87.4434V0.806296H87.5435ZM91.9496 10.8148C92.982 10.9016 94.011 10.6121 94.8537 9.99778C95.4545 9.48715 95.755 8.46587 95.755 6.93396C95.7827 6.17295 95.6811 5.41279 95.4545 4.68715C95.2291 4.16645 94.8421 3.73582 94.353 3.46162C93.6633 3.14108 92.9061 3.00069 92.1499 3.0531H90.748V10.7127H91.9496V10.8148Z"
+              fill="#111111" />
+            <path
+              d="M102.865 22.3554C101.824 20.5697 101.335 18.5053 101.463 16.432V8.67025C101.438 7.19026 101.607 5.71349 101.964 4.27876C102.299 3.20664 102.967 2.27469 103.866 1.62344C104.984 0.948453 106.274 0.628462 107.572 0.704291C109.674 0.704291 111.177 1.21493 112.078 2.33833C113.115 3.82172 113.61 5.62795 113.48 7.44472V8.26174H110.476V7.54684C110.48 6.69152 110.413 5.83736 110.275 4.99365C110.191 4.46049 109.903 3.98313 109.474 3.66599C108.911 3.28921 108.243 3.10993 107.572 3.15535C106.854 3.10843 106.143 3.32587 105.569 3.76812C105.333 3.97055 105.141 4.21989 105.003 4.50086C104.865 4.78184 104.785 5.08853 104.768 5.40216C104.636 6.31517 104.569 7.23673 104.567 8.15961V16.8405C104.494 18.163 104.698 19.4863 105.168 20.7213C105.569 21.5383 106.37 21.8447 107.572 21.8447C108.046 21.905 108.527 21.8208 108.955 21.6028C109.383 21.3847 109.738 21.0425 109.975 20.6192C110.504 19.3277 110.743 17.932 110.676 16.5341V14.9H107.772V12.5511H113.58V24.0915H111.577L111.277 21.4362C111.014 22.3261 110.468 23.101 109.724 23.6376C108.98 24.1742 108.081 24.4419 107.171 24.3979C106.344 24.4475 105.517 24.2869 104.765 23.9304C104.014 23.5739 103.361 23.0327 102.865 22.3554Z"
+              fill="#111111" />
+            <path
+              d="M119.989 15.9212L115.082 0.908447H118.086L121.591 12.1425L124.996 0.908447H128L123.093 15.9212V24.0914H120.089V15.9212H119.989Z"
+              fill="#111111" />
+          </svg>
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="ВКонтакте">
+              <svg role="img" aria-hidden="true" focusable="false" width="28" height="22" fill="currentColor">
+                <use href="img/icons/stack.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
+              <svg role="img" aria-hidden="true" focusable="false" width="28" height="22" fill="currentColor">
+                <use href="img/icons/stack.svg#youtube-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#" aria-label="Телеграм">
+              <svg role="img" aria-hidden="true" focusable="false" width="28" height="22" fill="currentColor"
+                viewBox="0 0 28 22">
+                <use href="img/icons/stack.svg#telegram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <div class="copyright__wrapper">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <svg role="img" aria-hidden="true" focusable="false" width="112" height="15">
+              <use href="img/icons/stack.svg#site-link"></use>
+            </svg>
+          </a>
+          <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <svg role="img" aria-hidden="true" focusable="false" width="27" height="34">
+              <use href="img/icons/stack.svg#copyright-icon"></use>
             </svg>
           </a>
         </div>
-        <div class="main-footer__social social">
-          <h2 class="visually-hidden">
-            Социальные сети
-          </h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="ВКонтакте">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none" viewBox="0 0 28 22">
-                  <path fill="#666"
-                    d="M1 5.339c0-.855.515-1.316 1.545-1.383l3.97.025a.52.52 0 0 1 .533.377c.409 1.257.866 2.343 1.372 3.257.506.913 1.168 1.965 1.985 3.156.071.15.187.226.346.226.125 0 .223-.059.293-.176l.08-.277.027-4.35c0-.302-.075-.503-.226-.604-.151-.1-.431-.176-.84-.226-.32-.05-.48-.235-.48-.553 0-.067.01-.118.027-.151.373-1.09 1.44-1.635 3.198-1.635L14.322 3c.675 0 1.234.16 1.678.478.444.318.666.821.666 1.509v5.708c.125.084.24.126.347.126.266 0 .497-.15.692-.453 1.954-2.582 3.011-4.308 3.17-5.18 0-.017.019-.059.054-.126.125-.251.329-.47.613-.654.284-.184.533-.31.746-.377a.554.554 0 0 1 .24-.05h4.13l.266.025c.355 0 .63.16.826.478.07.1.12.21.146.327.027.117.045.234.054.352.009.117.013.184.013.2v.177c-.124.687-.44 1.42-.946 2.2-.506.78-1.15 1.622-1.931 2.528-.782.905-1.27 1.5-1.466 1.785-.16.201-.24.386-.24.553 0 .135.071.286.213.453l3.89 4.627c.213.269.32.562.32.88 0 .386-.16.705-.48.956-.32.252-.701.394-1.145.428l-.453.025h-4.05a.855.855 0 0 0-.106.012.862.862 0 0 1-.107.013c-.39 0-.755-.16-1.092-.478-.125-.134-.96-1.123-2.505-2.967a1.387 1.387 0 0 0-.373-.327c-.07.268-.164.654-.28 1.157-.115.503-.2.863-.253 1.081l-.08.427c-.177.587-.55.94-1.119 1.057l-.373.025h-2.61c-1.475 0-2.945-.637-4.41-1.911-1.466-1.275-2.784-2.922-3.957-4.942-1.172-2.02-2.264-4.372-3.277-7.054A1.916 1.916 0 0 1 1 5.338Zm16.013 6.513c-.373 0-.71-.096-1.013-.29-.302-.192-.453-.456-.453-.791V4.987c0-.336-.089-.575-.266-.717-.178-.143-.489-.214-.933-.214l-1.518.05c-.764 0-1.341.126-1.732.378.781.352 1.172.922 1.172 1.71v4.426a1.5 1.5 0 0 1-.533 1.044 1.59 1.59 0 0 1-1.066.414c-.532 0-.94-.243-1.225-.729C8.06 9.371 7.03 7.493 6.356 5.716l-.24-.654-3.544-.025c-.231 0-.36.013-.386.038-.027.025-.04.096-.04.213 0 .151.017.31.053.478l.56 1.409c1.491 3.638 3.112 6.505 4.862 8.6 1.75 2.096 3.468 3.144 5.155 3.144h2.665c.106 0 .186-.03.24-.088.053-.06.097-.172.133-.34l.053-.251.506-2.213c.142-.302.267-.503.373-.604a.975.975 0 0 1 .693-.277c.426 0 .861.243 1.305.73l2.265 2.716c.142.218.293.327.453.327h4.396c.533 0 .8-.126.8-.378a.466.466 0 0 0-.08-.251l-3.864-4.552c-.302-.352-.453-.73-.453-1.131 0-.403.142-.788.427-1.157.23-.336.679-.893 1.345-1.673a37.63 37.63 0 0 0 1.745-2.187c.498-.68.826-1.296.986-1.849l.08-.327a.371.371 0 0 1-.027-.163.574.574 0 0 0-.026-.189h-4.183c-.267.1-.48.252-.64.453l-.16.478c-.444 1.156-1.607 2.942-3.49 5.356a1.892 1.892 0 0 1-1.305.503Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none" viewBox="0 0 28 22">
-                  <path fill="#666"
-                    d="m17.85 10.793-5.236-3.491a.655.655 0 0 0-1.014.545v6.982a.654.654 0 0 0 1.014.546l5.237-3.491a.655.655 0 0 0 0-1.091Zm-4.94 2.814V9.07l3.403 2.27-3.404 2.268Zm12.48-8.563a2.4 2.4 0 0 0-1.452-1.637C20.218 1.978 14.251 2 14 2c-.25 0-6.218-.022-9.938 1.407A2.4 2.4 0 0 0 2.61 5.044C2.327 6.113 2 8.076 2 11.338c0 3.262.327 5.226.61 6.295a2.4 2.4 0 0 0 1.452 1.636c3.72 1.43 9.687 1.407 9.938 1.407h.076c.753 0 6.317-.043 9.862-1.407a2.4 2.4 0 0 0 1.451-1.636c.284-1.07.611-3.033.611-6.295s-.327-5.225-.61-6.294Zm-1.266 12.261a1.09 1.09 0 0 1-.655.742c-3.49 1.342-9.404 1.32-9.469 1.32-.066 0-5.978.022-9.47-1.32a1.09 1.09 0 0 1-.654-.742c-.261-1.003-.567-2.847-.567-5.967 0-3.12.306-4.963.567-5.967a1.09 1.09 0 0 1 .655-.742C8.02 3.287 13.935 3.31 14 3.31c.066 0 5.978-.022 9.47 1.32a1.092 1.092 0 0 1 .654.742c.262 1.004.567 2.847.567 5.967 0 3.12-.305 4.964-.567 5.967Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="#" aria-label="Телеграм">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none" viewBox="0 0 28 22">
-                  <path fill="#666" fill-rule="evenodd"
-                    d="M23.46 3.153c.18.15.265.382.227.611l-2.626 15.757a.657.657 0 0 1-1.012.439l-7.878-5.253a.657.657 0 0 1-.149-.956l2.611-3.263-4.36 2.906a.657.657 0 0 1-.658.041L4.363 10.81a.657.657 0 0 1 .073-1.205l18.383-6.566a.657.657 0 0 1 .642.115Zm-17.134 7.17 3.536 1.768 7.561-5.041a.656.656 0 0 1 .877.956l-4.805 6.006 6.438 4.292L22.208 4.65 6.326 10.323Z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <div class="copyright__wrapper">
-            <a class="copyright__link" href="#" aria-label="HTML Academy">
-              <svg xmlns="http://www.w3.org/2000/svg" width="112" height="15" fill="none" viewBox="0 0 112 15">
-                <path fill="#444"
-                  d="M9.752.536V12H8.2V6.784H2.016V12H.464V.536h1.552v5.112H8.2V.536h1.552ZM20.435 1.84h-3.712V12h-1.544V1.84h-3.72V.536h8.976V1.84ZM34.064.536V12h-1.36V3.576c0-.112.002-.232.008-.36l.032-.392-3.936 7.168c-.123.24-.31.36-.56.36h-.224c-.25 0-.438-.12-.56-.36l-4.016-7.2c.032.283.048.544.048.784V12h-1.36V.536h1.144c.139 0 .245.013.32.04.074.027.146.101.216.224l3.96 7.056c.064.128.125.261.184.4.064.139.122.28.176.424.053-.144.11-.285.168-.424.059-.144.123-.28.192-.408L32.384.8c.064-.123.133-.197.208-.224.08-.027.19-.04.328-.04h1.144Zm9.435 10.16V12h-6.504V.536h1.544v10.16h4.96ZM54.38 7.744l-1.8-4.664a9.548 9.548 0 0 1-.336-1.072 8.706 8.706 0 0 1-.344 1.08l-1.8 4.656h4.28ZM57.612 12h-1.2a.517.517 0 0 1-.336-.104.64.64 0 0 1-.192-.264l-1.072-2.768h-5.144l-1.072 2.768a.562.562 0 0 1-.184.256.51.51 0 0 1-.336.112h-1.2L51.46.536h1.568L57.612 12Zm6.593-6.664a.636.636 0 0 1-.127.136.287.287 0 0 1-.177.048.487.487 0 0 1-.264-.096 3.655 3.655 0 0 0-.36-.224 2.548 2.548 0 0 0-.52-.216 2.346 2.346 0 0 0-.752-.104c-.4 0-.752.072-1.056.216a2.03 2.03 0 0 0-.767.608c-.203.267-.358.59-.465.968a4.924 4.924 0 0 0-.151 1.272c0 .49.055.928.167 1.312.113.379.27.699.473.96.207.256.455.453.743.592.294.133.622.2.985.2.346 0 .632-.04.855-.12.224-.085.408-.179.553-.28a4.76 4.76 0 0 0 .367-.272.466.466 0 0 1 .296-.128c.118 0 .209.045.273.136l.4.52a2.838 2.838 0 0 1-.6.56 3.812 3.812 0 0 1-.729.392 4.017 4.017 0 0 1-.807.224c-.283.048-.571.072-.864.072-.507 0-.98-.093-1.416-.28a3.253 3.253 0 0 1-1.129-.808 3.846 3.846 0 0 1-.752-1.312c-.18-.517-.272-1.107-.272-1.768 0-.603.083-1.16.248-1.672.171-.512.416-.952.736-1.32a3.369 3.369 0 0 1 1.192-.872c.475-.208 1.02-.312 1.633-.312.57 0 1.072.093 1.504.28.437.181.824.44 1.16.776l-.376.512Zm6.393 3.016c-.656.021-1.216.075-1.68.16-.459.08-.835.187-1.128.32-.288.133-.499.29-.632.472a1.03 1.03 0 0 0-.192.608c0 .213.035.397.104.552.07.155.163.283.28.384.123.096.264.168.424.216.165.043.341.064.528.064.25 0 .48-.024.688-.072.208-.053.403-.128.584-.224.187-.096.363-.21.528-.344.17-.133.336-.285.496-.456v-1.68Zm-4.6-3.312c.448-.432.93-.755 1.448-.968a4.471 4.471 0 0 1 1.72-.32c.454 0 .856.075 1.208.224.352.15.648.357.888.624s.421.59.544.968c.123.379.184.795.184 1.248V12h-.632a.653.653 0 0 1-.32-.064c-.075-.048-.133-.139-.176-.272l-.16-.768a8.67 8.67 0 0 1-.624.528c-.203.15-.416.277-.64.384a3.446 3.446 0 0 1-.72.232 3.69 3.69 0 0 1-.84.088c-.314 0-.61-.043-.888-.128a2.147 2.147 0 0 1-.728-.4 1.938 1.938 0 0 1-.488-.664 2.41 2.41 0 0 1-.176-.96c0-.32.088-.627.264-.92.176-.299.462-.563.856-.792.395-.23.91-.416 1.544-.56.635-.15 1.413-.235 2.336-.256v-.632c0-.63-.136-1.104-.408-1.424-.272-.325-.67-.488-1.192-.488-.352 0-.648.045-.888.136-.234.085-.44.184-.616.296-.17.107-.32.205-.448.296a.641.641 0 0 1-.368.128.425.425 0 0 1-.248-.072.756.756 0 0 1-.176-.192l-.256-.456Zm13.441.784c-.266-.357-.554-.605-.864-.744a2.435 2.435 0 0 0-1.04-.216c-.752 0-1.33.27-1.736.808-.405.539-.608 1.307-.608 2.304 0 .528.046.981.136 1.36.09.373.224.683.4.928.176.24.392.416.648.528.256.112.547.168.872.168.47 0 .878-.107 1.224-.32.352-.213.675-.515.968-.904V5.824ZM80.863.216V12h-.848c-.202 0-.33-.099-.384-.296l-.128-.984a4.414 4.414 0 0 1-1.184 1.008c-.442.256-.954.384-1.536.384-.464 0-.885-.088-1.264-.264a2.657 2.657 0 0 1-.968-.792c-.266-.347-.472-.779-.616-1.296-.144-.517-.216-1.112-.216-1.784 0-.597.08-1.152.24-1.664.16-.517.39-.965.688-1.344a3.162 3.162 0 0 1 1.096-.888 3.246 3.246 0 0 1 1.472-.328c.496 0 .92.085 1.272.256.358.165.675.397.952.696V.216h1.424Zm7.673 6.848c0-.33-.048-.632-.144-.904a1.917 1.917 0 0 0-.408-.712 1.722 1.722 0 0 0-.648-.464 2.155 2.155 0 0 0-.872-.168c-.682 0-1.224.2-1.624.6-.394.395-.64.944-.736 1.648h4.432Zm1.152 3.8c-.176.213-.386.4-.632.56a4.03 4.03 0 0 1-.792.384 4.676 4.676 0 0 1-.864.224c-.298.053-.594.08-.888.08-.56 0-1.077-.093-1.552-.28A3.513 3.513 0 0 1 83.736 11a3.89 3.89 0 0 1-.8-1.36c-.192-.539-.288-1.157-.288-1.856 0-.565.086-1.093.256-1.584a3.74 3.74 0 0 1 .752-1.272 3.374 3.374 0 0 1 1.192-.848 3.87 3.87 0 0 1 1.584-.312c.486 0 .934.083 1.344.248.416.16.774.395 1.072.704.304.304.542.683.712 1.136.171.448.256.96.256 1.536 0 .224-.024.373-.072.448-.048.075-.138.112-.272.112h-5.416c.016.512.086.957.208 1.336.128.379.304.696.528.952.224.25.491.44.8.568a2.8 2.8 0 0 0 1.04.184c.358 0 .664-.04.92-.12a4.608 4.608 0 0 0 1.136-.536c.128-.085.238-.128.328-.128.118 0 .208.045.272.136l.4.52ZM91.565 12V3.896h.856c.203 0 .328.099.376.296l.105.832c.298-.368.634-.67 1.007-.904a2.383 2.383 0 0 1 1.296-.352c.544 0 .984.152 1.32.456.342.304.587.715.736 1.232.118-.293.267-.547.449-.76a2.65 2.65 0 0 1 1.352-.832c.26-.064.525-.096.791-.096.427 0 .806.07 1.137.208.336.133.618.33.848.592.234.261.413.584.536.968.122.379.184.813.184 1.304V12h-1.432V6.84c0-.635-.139-1.115-.416-1.44-.278-.33-.678-.496-1.2-.496-.235 0-.46.043-.672.128-.209.08-.392.2-.552.36-.16.16-.288.363-.385.608-.09.24-.135.52-.135.84V12h-1.433V6.84c0-.65-.13-1.136-.391-1.456-.262-.32-.643-.48-1.144-.48a1.77 1.77 0 0 0-.977.288 3.173 3.173 0 0 0-.823.768V12h-1.433Zm19.946-8.104-4.52 10.496a.727.727 0 0 1-.184.256c-.07.064-.179.096-.328.096h-1.056l1.48-3.216-3.344-7.632h1.232a.41.41 0 0 1 .288.096.454.454 0 0 1 .152.2l2.168 5.104c.085.224.157.459.216.704a9.46 9.46 0 0 1 .24-.712l2.104-5.096a.438.438 0 0 1 .16-.208.436.436 0 0 1 .264-.088h1.128Z" />
-              </svg>
-            </a>
-            <span class="copyright__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
-                <g clip-path="url(#a)">
-                  <path fill="#666"
-                    d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h27v34H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-          </div>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </main>
-  <script src="script.js" defer>
+  <script src="js/script.js" defer>
   </script>
 </body>
 

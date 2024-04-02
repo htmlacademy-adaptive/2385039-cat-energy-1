@@ -4,14 +4,14 @@
 }
 
 .advantages__wrapper {
-  margin: 0 auto 49px;
+  margin: 0 auto 47px;
   padding: 0;
   width: 280px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0;
   color: #000000;
   font-size: 36px;
@@ -45,19 +45,19 @@
 
 
 .advantages__item--icon-leaf::before {
-  background-image: url("../img/advantages/advantage-1.svg");
+  background-image: url("../img/icons/stack.svg#advantage-1");
 }
 
 .advantages__item--icon-solute::before {
-  background-image: url("../img/advantages/advantage-2.svg");
+  background-image: url("../img/icons/stack.svg#advantage-2");
 }
 
 .advantages__item--icon-diet::before {
-  background-image: url("../img/advantages/advantage-3.svg");
+  background-image: url("../img/icons/stack.svg#advantage-3");
 }
 
 .advantages__item--icon-time::before {
-  background-image: url("../img/advantages/advantage-4.svg");
+  background-image: url("../img/icons/stack.svg#advantage-4");
 }
 
 
@@ -78,7 +78,7 @@
     margin: 0;
     padding: 0;
     padding-left: 30px;
-    padding-bottom: 47px;
+    padding-bottom: 43px;
     border-bottom: 1px solid #e6e6e6;
     width: 768px;
   }
@@ -86,24 +86,24 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(2, 250px);
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 135px;
     width: 708px;
   }
 
   .advantages__item {
     margin: 0;
     padding-top: 40px;
-    padding-bottom: 57px;
+    padding-bottom: 60px;
     position: relative;
     flex-direction: column;
-    gap: 40px;
+    gap: 31px;
   }
 
   .advantages__item::before {
@@ -145,7 +145,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
-    margin: 0 auto 70px;
+    margin: 0 auto 68px;
     width: 1220px;
     padding: 0;
     border: none;
@@ -154,16 +154,21 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    width: 1220px;
-    gap: 78px;
+    width: 1225px;
+    gap: 75px;
   }
 
   .advantages__item {
-    width: 230px;
-    gap: 31px;
+    width: 250px;
+    gap: 32px;
   }
 
+  .advantages__item::before {
+    padding-left: 2px;
+  }
+
+
   .advantages__description {
-    width: 230px;
+    width: 250px;
   }
 }

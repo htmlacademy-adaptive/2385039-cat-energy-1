@@ -15,14 +15,10 @@
 
 .copyright__link {
   margin: 0;
-  padding: 0;
-  width: 112px;
-  height: 15px;
+  padding: 7px 0;
+  width: 113px;
+  height: 34px;
   color: #666666;
-
-  &:hover {
-    transition-duration: 0.3s;
-  }
 
   &:active {
     opacity: 0.3;
@@ -35,10 +31,10 @@
   width: 27px;
   height: 34px;
   color: #666666;
+  transition: color 0.3s ease-in;
 
   &:hover {
     color: #68b738;
-    transition-duration: 0.3s;
   }
 
   &:active {
@@ -51,5 +47,15 @@
   .copyright__wrapper {
     width: 168px;
     margin: 0;
+    margin-left: 285px;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__wrapper {
+    margin-left: 799px;
+    gap: 24px;
   }
 }

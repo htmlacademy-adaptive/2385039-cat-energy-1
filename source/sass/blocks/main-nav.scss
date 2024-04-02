@@ -15,23 +15,16 @@
   padding: 0;
   cursor: pointer;
   border: none;
-  top: 21px;
+  top: 23px;
   right: 20px;
   width: 24px;
   height: 24px;
   background-image: url("../img/main-nav/nav__toggle-close.svg");
   background-repeat: no-repeat;
+}
 
-  &:active {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    top: 21px;
-    right: 20px;
+.main-nav--opened {
+  .main-nav__toggle {
     width: 20px;
     height: 20px;
     background-image: url("../img/main-nav/nav__toggle-open.svg");
@@ -42,6 +35,7 @@
 .main-nav--opened .main-nav__list {
   display: block;
   z-index: 2;
+  margin-top: -3px;
 }
 
 
@@ -59,8 +53,8 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    gap: 33px;
-    width: 436px;
+    gap: 34px;
+    width: 438px;
     flex-wrap: wrap;
   }
 }
@@ -72,12 +66,20 @@
 
   .main-nav__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 33px;
+    grid-template-columns: 71px repeat(2, 171px);
     justify-content: start;
+    width: 478px;
   }
 
   .main-nav__list {
     width: 478px;
+    gap: 32px;
+  }
+
+  .main-nav__list-catalog {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    gap: 34px;
   }
 }
