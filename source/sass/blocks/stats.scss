@@ -168,14 +168,16 @@
   &:active {
     .stats__slider-height-scale {
       background-color: #5eaa2f;
+      opacity: 0.6;
     }
 
     .stats__slider-arrows {
       color: #5eaa2f;
+      opacity: 0.6;
     }
 
     .stats__slider-ring-scale {
-      border-color: #5eaa2f;
+      border-color: rgb(94, 170, 47, 0.6);
     }
   }
 }

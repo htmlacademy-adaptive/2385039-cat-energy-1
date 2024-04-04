@@ -101,6 +101,7 @@
   text-transform: uppercase;
   position: relative;
   max-width: 140px;
+  transition: background-image 0.3s ease-in, opacity 0.3s ease-in;
 
   &:active {
     opacity: 0.3;
@@ -110,8 +111,8 @@
 .choice__link::after {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 10px;
+  width: 25px;
+  height: 12px;
   background-image: url("../img/icons/stack.svg#icon-arrow");
   background-repeat: no-repeat;
   top: 50%;
@@ -119,6 +120,19 @@
   left: auto;
   margin-left: 14px;
 }
+
+.choice__link:hover::after {
+  content: "";
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icons/stack.svg#icon-arrow-big");
+  background-repeat: no-repeat;
+}
+
+.choice__link:active::after {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .choice__wrapper {

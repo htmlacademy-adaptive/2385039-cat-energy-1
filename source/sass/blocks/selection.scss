@@ -53,10 +53,6 @@
   text-transform: uppercase;
 }
 
-.selection__form-item--error {
-  border-color: #ff8282;
-}
-
 .selection__form-description {
   margin: 0;
   margin-left: 2px;
@@ -260,6 +256,23 @@
   right: 15px;
   mask-position: center;
   background-color: #222222;
+}
+
+.selection__form-description--error {
+  outline: 2px solid #ff8282;
+  border: none;
+
+  .selection__form-email::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../img/icons/stack.svg#email-vector-error");
+    mask-repeat: no-repeat;
+    width: 17px;
+    height: 13px;
+    right: 15px;
+    mask-position: center;
+    background-color: #ff8282;
+  }
 }
 
 .selection__form-phone {
