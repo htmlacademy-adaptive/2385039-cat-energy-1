@@ -1,13 +1,7 @@
-.hero {
-  margin: 0;
-  padding: 0;
-}
-
 .hero__wrapper {
-  margin: 0 auto;
   margin-top: -3px;
   padding: 0;
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 140px);
@@ -52,12 +46,13 @@
   height: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .hero__wrapper {
-    width: 708px;
-    margin: 0 auto;
+    width: 768px;
     background: #ffffff;
     display: flex;
     flex-direction: column;

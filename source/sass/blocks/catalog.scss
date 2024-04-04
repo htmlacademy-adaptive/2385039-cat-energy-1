@@ -1,6 +1,4 @@
 .catalog__wrapper {
-  width: 320px;
-  margin: 0 auto;
   margin-top: -4px;
   padding: 0;
 }
@@ -70,7 +68,7 @@
 
 .catalog__description {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
@@ -94,6 +92,10 @@
   margin-top: 4px;
   padding: 10px 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .catalog__item--more {
@@ -133,7 +135,7 @@
 .catalog__more-slogan {
   color: #444444;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
@@ -149,7 +151,9 @@
   margin: 0;
   padding: 10px 0;
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   cursor: pointer;
   transition: color 0.3s ease-in, background-color 0.3s ease-in;
 
@@ -222,7 +226,7 @@
 
 .catalog__additionally-description {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
 }
@@ -245,20 +249,22 @@
 
 .catalog__additionally-button {
   width: 280px;
-  height: 40px;
   border: none;
   margin: 0;
   padding: 10px 0;
   cursor: pointer;
   color: #ffffff;
   background-color: #68b738;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
   transition: background-color 0.3s ease-in;
 
   &:hover {
@@ -305,7 +311,7 @@
 .catalog__additionally-gift-slogan {
   color: #ffffff;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -319,8 +325,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
-    width: 708px;
-    margin: 0 30px;
+    margin-top: 0;
     margin-bottom: 70px;
   }
 
@@ -539,8 +544,6 @@
   }
 
   .catalog__additionally-button {
-    width: 632px;
-    height: 40px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -576,8 +579,6 @@
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    width: 1220px;
-    margin: 0 110px;
     margin-bottom: 76px;
   }
 
@@ -747,7 +748,6 @@
 
   .catalog__additionally-button {
     width: 245px;
-    height: 40px;
   }
 
   .catalog__additionally-gift {

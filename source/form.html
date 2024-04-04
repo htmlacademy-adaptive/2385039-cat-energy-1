@@ -14,11 +14,12 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
-    <div class="main-header__form main-header__wrapper">
+    <div class="main-header__wrapper container">
       <div class="logo">
         <div class="logo__wrapper">
-          <a class="logo-link" href="index.html" aria-label="Перейти на главную страницу">
+          <a class="logo__link" href="index.html" aria-label="Перейти на главную страницу">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
               <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
@@ -62,14 +63,14 @@
 
   <main class="main-selection">
     <section class="selection">
-      <h1 class="main-selection__title">
-        Подбор программы
-      </h1>
-      <div class="selection__wrapper">
-        <p class="selection__info">
-          Заполните анкету, и мы подберем
-          программу&nbsp;питания для вашего кота
-        </p>
+      <div class="selection__wrapper container">
+        <h1 class="main-selection__title">
+          Подбор программы
+        </h1>
+          <p class="selection__info">
+            Заполните анкету, и мы подберем
+            программу&nbsp;питания для вашего кота
+          </p>
         <form class="selection__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="selection__form-questionary">
             <legend class="visually-hidden">Анкетные данные питомца</legend>
@@ -195,7 +196,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__form-wrapper contacts__wrapper">
+      <div class="contacts__form-wrapper contacts__wrapper container">
         <h2 class="visually-hidden">
           Адрес компании
         </h2>
@@ -203,10 +204,10 @@
           приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <address class="contacts__address">
-          <p class="address">
+          <p class="contacts__address-location">
             ул. Большая Конюшенная, д. 19/8
           </p>
-          <span>Санкт-Петербург</span>
+          <span class="contacts__span">Санкт-Петербург</span>
         </address>
       </div>
       <div class="contacts__map">
@@ -219,7 +220,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <div class="logo">
         <a class="logo__text logo__text--footer" href="index.html" aria-label="Логотип">
           <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">

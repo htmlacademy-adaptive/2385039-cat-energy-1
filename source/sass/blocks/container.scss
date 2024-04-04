@@ -1,18 +1,16 @@
-.page__body {
-  margin: 0 auto;
-  padding: 0;
+.container {
   width: 320px;
-  height: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .page__body {
+  .container {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page__body {
+  .container {
     width: 1440px;
   }
 }

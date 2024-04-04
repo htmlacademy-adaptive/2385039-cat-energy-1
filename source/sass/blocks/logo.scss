@@ -4,7 +4,7 @@
 }
 
 .logo__wrapper,
-.logo-link {
+.logo__link {
   margin: 0;
   padding: 0;
   display: flex;
@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .logo__wrapper,
-  .logo-link {
+  .logo__link {
     width: 176px;
     align-items: center;
     padding: 0;
@@ -89,7 +89,7 @@
 
 @media (min-width: $desktop-width) {
   .logo__wrapper,
-  .logo-link {
+  .logo__link {
     margin: 0;
     padding: 0;
     width: 205px;

@@ -16,10 +16,10 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper container">
       <div class="logo">
         <div class="logo__wrapper">
-          <a class="logo-link" href="#" aria-label="Перейти на главную страницу">
+          <a class="logo__link" href="#" aria-label="Перейти на главную страницу">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
               <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
@@ -70,8 +70,14 @@
         <p class="hero__slogan">
           Занялся собой? Займись котом!
         </p>
-        <div class="hero__image-wrapper">
+        <div class="hero__image-wrapper container">
           <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/main-header/index-can-desktop.webp 1x, img/main-header/index-can-desktop@2x.webp 2x"
+              width="552">
+            <source media="(min-width: 768px)"
+              srcset="img/main-header/index-can-tablet.webp 1x, img/main-header/index-can-tablet@2x.webp 2x"
+              width="709">
             <source media="(min-width: 1440px)"
               srcset="img/main-header/index-can-desktop.jpg 1x, img/main-header/index-can-desktop@2x.jpg 2x"
               width="552">
@@ -125,7 +131,7 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper container">
         <h2 class="advantages__title">
           Как это работает
         </h2>
@@ -162,7 +168,7 @@
     </section>
 
     <section class="stats">
-      <div class="stats__wrapper">
+      <div class="stats__wrapper container">
         <h2 class="stats__title">
           Живой пример
         </h2>
@@ -201,15 +207,11 @@
         <div class="stats-sliders">
           <picture>
             <source media="(min-width: 768px)"
-              srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x" width="280">
-            <img class="stats-sliders__before" width="140" height="256" src="img/stats/cat-before.jpg"
-              srcset="img/stats/cat-before@2x.jpg 2x" alt="Фото-слайдер кота до">
-          </picture>
-          <picture>
+              srcset="img/stats/cat-before-tablet.webp 1x, img/stats/cat-before-tablet@2x.webp 2x" width="560">
             <source media="(min-width: 768px)"
-              srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x" width="280">
-            <img class="stats-sliders__after" width="140" height="256" src="img/stats/cat-after.jpg"
-              srcset="img/stats/cat-after@2x.jpg 2x" alt="Фото-слайдер кота после">
+              srcset="img/stats/cat-before-tablet.jpg 1x, img/stats/cat-before-tablet@2x.jpg 2x" width="560">
+            <img class="stats-sliders__before" width="280" height="256" src="img/stats/cat-before.jpg"
+              srcset="img/stats/cat-before@2x.jpg 2x" alt="Фото-слайдер кота до">
           </picture>
           <button class="stats__slider-icon" type="button" aria-label="Бегунок-переключатель слайдера">
             <span class="stats__slider-height-scale">
@@ -220,12 +222,21 @@
               </svg>
             </span>
           </button>
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/stats/cat-after-tablet.webp 1x, img/stats/cat-after-tablet@2x.webp 2x" width="560">
+            <source media="(min-width: 768px)"
+              srcset="img/stats/cat-after-tablet.jpg 1x, img/stats/cat-after-tablet@2x.jpg 2x" width="560">
+            <img class="stats-sliders__after" width="280" height="256" src="img/stats/cat-after.jpg"
+              srcset="img/stats/cat-after@2x.jpg 2x" alt="Фото-слайдер кота после">
+          </picture>
+
         </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper container">
         <h2 class="visually-hidden">
           Адрес компании
         </h2>
@@ -233,14 +244,14 @@
           приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <address class="contacts__address">
-          <p class="address">
+          <p class="contacts__address-location">
             ул. Большая Конюшенная, д. 19/8
           </p>
-          <span class="address-span">Санкт-Петербург</span>
+          <span class="contacts__span">Санкт-Петербург</span>
         </address>
       </div>
       <div class="contacts__map">
-        <iframe width="320" height="362" title="Адрес магазина."
+        <iframe title="Адрес магазина."
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247715258!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705336001182!5m2!1sru!2sru"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
@@ -249,7 +260,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <div class="logo">
         <a class="logo__text logo__text--footer" href="#" aria-label="Логотип">
           <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">

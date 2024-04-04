@@ -15,17 +15,20 @@
   .main-catalog__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 65px;
     margin-bottom: 84px;
     padding: 0;
-    width: 708px;
+    padding-left: 30px;
+    width: 768px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog__title {
-    margin: 0;
+    margin-top: 74px;
     margin-bottom: 84px;
-    padding: 0;
+    padding-left: 110px;
+    width: 1440px;
   }
 }
