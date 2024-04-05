@@ -217,7 +217,6 @@
 }
 
 .selection__form-title {
-  margin: 0;
   margin-bottom: 35px;
   padding: 0 20px;
   width: 320px;
@@ -234,12 +233,13 @@
 .selection__form-title::before {
   content: "";
   position: absolute;
-  width: 93px;
+  width: 100%;
   height: 2px;
   background-color: #68b738;
   bottom: 34px;
   right: 0;
   background-position: center;
+  overflow: visible;
 }
 
 .selection__form-email {
@@ -473,7 +473,7 @@
   }
 
   .selection__form-title::before {
-    width: 146px;
+    width: 100%;
     bottom: 17px;
   }
 
@@ -639,13 +639,12 @@
   }
 
   .selection__form-title::before {
-    width: 778px;
+    width: 100%;
     right: -110px;
   }
 
   .selection__form-title::after {
-    width: 70px;
-    left: -110px;
+    width: 100%;
   }
 
   .selection__comment-wrapper {
