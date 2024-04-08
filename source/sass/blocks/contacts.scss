@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.contacts--fon {
+  background-color: #f2f2f2;
+}
+
 .contacts__form-wrapper {
   background-color: #f2f2f2;
   width: 100%;
@@ -13,12 +17,6 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 0;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.contacts__wrapper-catalog {
-  background-color: #f2f2f2;
 }
 
 .contacts__slogan {
@@ -66,9 +64,10 @@
   height: 362px;
 
   &:disabled {
-    background-image: url("../img/contacts/map-image.png");
-    width: 100%;
+    background-image: url("../img/contacts/map-mobile.png");
+    width: 320px;
     height: 362px;
+    background-size: cover;
   }
 }
 
@@ -79,7 +78,6 @@
     padding: 60px 70px;
     grid-template-columns: 163px 157px;
     gap: 308px;
-    justify-content: space-between;
   }
 
   .contacts__slogan {
@@ -109,9 +107,11 @@
     height: 400px;
 
     &:disabled {
-      background-image: url("../img/contacts/map-image.png");
-      width: 100%;
+      background-image: url("../img/contacts/map-tablet.png");
+      background-repeat: no-repeat;
+      width: 768px;
       height: 400px;
+      background-size: cover;
     }
   }
 }
@@ -119,12 +119,11 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     margin: 0;
-    margin-top: 95px;
+    margin-top: 94px;
     margin-left: 111px;
-    padding: 61px 80px;
-    padding-top: 60px;
+    padding: 62px 78px;
     width: 567px;
-    gap: 0;
+    gap: 83px;
     position: absolute;
     z-index: 0;
     background-color: #ffffff;
@@ -134,5 +133,16 @@
     width: 158px;
     text-align: left;
     margin-left: 4px;
+  }
+
+  .contacts__map {
+    height: 400px;
+
+    &:disabled {
+      background-image: url("../img/contacts/map-desktop.png");
+      width: 1440px;
+      height: 400px;
+      background-size: cover;
+    }
   }
 }

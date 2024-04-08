@@ -1,5 +1,5 @@
 .selection__wrapper {
-  width: 320px;
+  padding: 0;
 }
 
 .selection__info {
@@ -20,7 +20,7 @@
 .selection__form-questionary,
 .selection__program,
 .selection__form-contact,
-.selection__form-comment {
+.selection__comment {
   margin: 0;
   padding: 0;
   border: none;
@@ -30,12 +30,10 @@
 .selection__contact-wrapper,
 .selection__comment-wrapper,
 .selection__additionally-wrapper {
-  margin: 0;
   margin-bottom: 20px;
   padding: 0 20px;
   padding-bottom: 24px;
   row-gap: 13px;
-  width: 320px;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: column;
@@ -57,6 +55,7 @@
   margin: 0;
   margin-left: 2px;
   padding: 14px 15px;
+  padding-right: 35px;
   padding-bottom: 12px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
@@ -89,12 +88,10 @@
 }
 
 .selection__program-wrapper {
-  margin: 0;
   margin-bottom: 26px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  width: 320px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -156,6 +153,8 @@
   height: 30px;
   box-sizing: border-box;
   transition: outline-color 0.3s ease-in;
+  display: flex;
+  flex-wrap: wrap;
 
   &:hover {
     outline-color: #bababa;
@@ -219,28 +218,39 @@
 .selection__form-title {
   margin-bottom: 35px;
   padding: 0 20px;
-  width: 320px;
   color: #000000;
   font-size: 24px;
   line-height: 26px;
   position: relative;
 }
 
-.selection__contact-title {
-  margin-bottom: 34px;
-}
-
-.selection__form-title::before {
+.selection__comment-title::after,
+.selection__additionally-title::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #68b738;
-  bottom: 34px;
-  right: 0;
+  bottom: 12px;
+  margin-left: 20px;
   background-position: center;
-  overflow: visible;
 }
+
+
+.selection__contact-title {
+  margin-bottom: 34px;
+}
+
+.selection__contact-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  margin-left: 45px;
+  bottom: 34px;
+}
+
 
 .selection__form-email {
   column-gap: 9px;
@@ -324,12 +334,6 @@
   max-width: 252px;
 }
 
-.selection__comment-title::before {
-  width: 159px;
-  bottom: 10px;
-  right: 0;
-}
-
 .selection__additionally {
   margin: 0;
   padding: 0;
@@ -337,16 +341,8 @@
 }
 
 .selection__additionally-wrapper {
-  margin: 0;
-  padding: 0 20px;
   padding-bottom: 33px;
 }
-
-.selection__additionally-title::before {
-  width: 139px;
-  bottom: 12px;
-}
-
 
 .selection__button {
   margin: 0;
@@ -413,6 +409,7 @@
 
   .selection__form-description {
     padding: 10px 20px;
+    padding-right: 38px;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -472,24 +469,27 @@
     line-height: 36px;
   }
 
-  .selection__form-title::before {
-    width: 100%;
-    bottom: 17px;
+  .selection__comment-title::after,
+  .selection__additionally-title::after {
+    margin-left: 40px;
   }
 
-  .selection__form-title::after {
+  .selection__contact-title::before,
+  .selection__comment-title::before,
+  .selection__additionally-title::before {
     content: "";
     position: absolute;
     width: 30px;
     height: 2px;
     background-color: #68b738;
-    bottom: 11px;
+    bottom: 12px;
     left: -70px;
     background-position: center;
   }
 
-  .selection__contact-title::before {
-    bottom: 11px;
+  .selection__contact-title::after {
+    bottom: 12px;
+    margin-left: 40px;
   }
 
   .selection__form-email {
@@ -508,11 +508,6 @@
     margin-bottom: 87px;
   }
 
-  .selection__comment-title::before {
-    width: 476px;
-    bottom: 11px;
-  }
-
   .selection__form-comment textarea {
     width: 628px;
     min-height: 175px;
@@ -529,15 +524,6 @@
 
   .selection__additionally-title {
     margin-bottom: 51px;
-  }
-
-  .selection__additionally-title::before {
-    width: 446px;
-    bottom: 20px;
-  }
-
-  .selection__additionally-title::after {
-    bottom: 20px;
   }
 
   .selection__additionally-list {
@@ -600,13 +586,14 @@
     width: 1220px;
     flex-wrap: wrap;
     column-gap: 80px;
-    row-gap: 68px;
+    row-gap: 69px;
   }
 
   .selection__questionary-wrapper {
     width: 570px;
     margin: 0;
     padding: 0;
+    gap: 20px;
   }
 
   .selection__program-wrapper {
@@ -638,13 +625,11 @@
     width: 1220px;
   }
 
-  .selection__form-title::before {
-    width: 100%;
-    right: -110px;
-  }
-
-  .selection__form-title::after {
-    width: 100%;
+  .selection__contact-title::before,
+  .selection__comment-title::before,
+  .selection__additionally-title::before {
+    width: 70px;
+    left: -110px;
   }
 
   .selection__comment-wrapper {
@@ -655,17 +640,6 @@
   .selection__comment-title {
     margin-bottom: 78px;
   }
-
-  .selection__comment-title::before {
-    width: 1108px;
-    right: -110px;
-    bottom: 10px;
-  }
-
-  .selection__comment-title::after {
-    bottom: 10px;
-  }
-
 
   .selection__form-comment {
     width: 1220px;
@@ -683,16 +657,7 @@
   }
 
   .selection__additionally-title {
-    margin-bottom: 60px;
-  }
-
-  .selection__additionally-title::before {
-    width: 1078px;
-    bottom: 9px;
-  }
-
-  .selection__additionally-title::after {
-    bottom: 9px;
+    margin-bottom: 57px;
   }
 
   .selection__additionally-list {

@@ -7,9 +7,7 @@
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  width: 320px;
 }
-
 
 .stats__title {
   margin: 0;
@@ -218,11 +216,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .stats {
+    background: linear-gradient(to bottom, #ffffff 574px, #eaeaea 462px);
+  }
+
   .stats__wrapper {
     margin-top: 45px;
     margin-bottom: 0;
     padding: 0 30px;
-    width: 100%;
     background: linear-gradient(to bottom, #ffffff 574px, #eaeaea 462px);
   }
 
@@ -246,7 +247,6 @@
     display: flex;
     margin: 0;
     padding: 0;
-    width: 768px;
   }
 
   .stats__list {
@@ -320,16 +320,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .stats {
+    background: linear-gradient(to top, #f2f2f2 464px, #ffffff 75px);
+  }
+
   .stats__wrapper {
     position: relative;
     padding: 0 111px;
     padding-bottom: 73px;
-    width: 100%;
     background: linear-gradient(to top, #f2f2f2 464px, #ffffff 75px);
   }
 
   .stats__title {
-    margin-bottom: 74px;
+    margin-bottom: 70px;
   }
 
   .stats__info {

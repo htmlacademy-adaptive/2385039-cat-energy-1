@@ -11,8 +11,11 @@
 }
 
 .main-footer__social {
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
+  width: 280px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .main-footer__copyright {
@@ -27,11 +30,16 @@
     display: grid;
     grid-template-columns: 128px 132px 168px;
   }
+
+  .main-footer__social {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     width: 1440px;
-    padding: 72px 109px;
+    padding: 66px 109px;
   }
 }
