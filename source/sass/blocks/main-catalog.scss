@@ -4,10 +4,7 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0;
-  padding: 0 20px;
-  padding-top: 27px;
-  padding-bottom: 39px;
-  width: 320px;
+  padding: 27px 20px 39px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -15,17 +12,16 @@
   .main-catalog__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 65px;
     margin-bottom: 84px;
     padding: 0;
-    width: 708px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog__title {
-    margin: 0;
+    margin-top: 66px;
     margin-bottom: 84px;
-    padding: 0;
   }
 }

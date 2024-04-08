@@ -1,10 +1,15 @@
-.main-nav {
-  width: auto;
-}
-
 .main-nav__list {
   display: none;
   z-index: 1;
+
+  &:default {
+    display: block;
+    margin-top: -3px;
+  }
+
+  &:disabled {
+    display: block;
+  }
 }
 
 .main-nav__toggle {
@@ -29,6 +34,10 @@
     height: 20px;
     background-image: url("../img/main-nav/nav__toggle-open.svg");
     background-color: #ffffff;
+  }
+
+  .main-catalog__title {
+    border: none;
   }
 }
 
@@ -60,20 +69,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 478px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
-  .main-nav__wrapper {
-    display: grid;
-    grid-template-columns: 71px repeat(2, 171px);
-    justify-content: start;
-    width: 478px;
-  }
 
   .main-nav__list {
     width: 478px;
-    gap: 32px;
+    gap: 33px;
   }
 
   .main-nav__list-catalog {

@@ -1,18 +1,13 @@
 .stats {
-  margin: 0;
-  padding: 0;
+  background-color: #eaeaea;
 }
 
 .stats__wrapper {
-  margin: 0;
   padding: 0 20px;
   padding-top: 25px;
-  width: 100%;
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
 }
-
 
 .stats__title {
   margin: 0;
@@ -30,7 +25,7 @@
   padding: 0;
   width: 280px;
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -78,7 +73,7 @@
   max-width: 77px;
   color: #444444;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -108,19 +103,28 @@
 .stats-sliders {
   margin: 0;
   padding: 0;
+  width: 280px;
   padding-bottom: 36px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
 }
 
 
 .stats-sliders__before,
 .stats-sliders__after {
-  width: 140px;
+  width: 280px;
   height: 256px;
+  object-fit: cover;
   color: #666666;
+}
+
+.stats-sliders__before {
+  object-position: left;
+}
+
+.stats-sliders__after {
+  object-position: right;
 }
 
 .stats__slider-icon {
@@ -162,14 +166,16 @@
   &:active {
     .stats__slider-height-scale {
       background-color: #5eaa2f;
+      opacity: 0.6;
     }
 
     .stats__slider-arrows {
       color: #5eaa2f;
+      opacity: 0.6;
     }
 
     .stats__slider-ring-scale {
-      border-color: #5eaa2f;
+      border-color: rgb(94, 170, 47, 0.6);
     }
   }
 }
@@ -210,10 +216,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .stats {
+    background: linear-gradient(to bottom, #ffffff 574px, #eaeaea 462px);
+  }
+
   .stats__wrapper {
-    margin: 45px auto 0;
+    margin-top: 45px;
+    margin-bottom: 0;
     padding: 0 30px;
-    width: 768px;
     background: linear-gradient(to bottom, #ffffff 574px, #eaeaea 462px);
   }
 
@@ -237,7 +247,6 @@
     display: flex;
     margin: 0;
     padding: 0;
-    width: 768px;
   }
 
   .stats__list {
@@ -311,17 +320,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .stats {
+    background: linear-gradient(to top, #f2f2f2 464px, #ffffff 75px);
+  }
+
   .stats__wrapper {
     position: relative;
-    margin: 0;
     padding: 0 111px;
     padding-bottom: 73px;
-    width: 1440px;
     background: linear-gradient(to top, #f2f2f2 464px, #ffffff 75px);
   }
 
   .stats__title {
-    margin-bottom: 74px;
+    margin-bottom: 70px;
   }
 
   .stats__info {
