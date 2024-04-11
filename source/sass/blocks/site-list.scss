@@ -1,14 +1,16 @@
 .site-list {
+  width: 320px;
   margin: 0;
   padding: 0;
   position: absolute;
   left: 0;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .site-list a {
-  width: 320px;
   border: 1px solid #e6e6e6;
   border-bottom: none;
+  width: 320px;
   position: relative;
   display: flex;
   padding-top: 22px;
@@ -19,10 +21,6 @@
   max-height: 66px;
 }
 
-
-.site-list:last-child {
-  border-bottom: 1px solid #e6e6e6;
-}
 
 .site-list__item {
   margin: 0;
@@ -56,6 +54,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     position: relative;
+    width: auto;
   }
 
   .site-list a {

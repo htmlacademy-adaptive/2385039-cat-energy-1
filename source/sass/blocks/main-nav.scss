@@ -1,15 +1,6 @@
 .main-nav__list {
   display: none;
   z-index: 1;
-
-  &:default {
-    display: block;
-    margin-top: -3px;
-  }
-
-  &:disabled {
-    display: block;
-  }
 }
 
 .main-nav__toggle {
@@ -45,6 +36,14 @@
   display: block;
   z-index: 2;
   margin-top: -3px;
+  left: 0;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+  margin-top: -3px;
+  position: relative;
+  left: -20px;
 }
 
 
