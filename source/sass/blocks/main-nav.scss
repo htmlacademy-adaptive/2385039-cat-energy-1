@@ -39,18 +39,25 @@
   left: 0;
 }
 
-.main-nav--nojs .main-nav__list {
-  display: block;
-  margin-top: -3px;
-  position: relative;
-  left: -20px;
+.main-nav--nojs {
+  .main-nav__list {
+    display: block;
+    z-index: 2;
+    margin-top: -4px;
+    position: fixed;
+    left: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
-    width: 436px;
+    width: 438px;
     height: 100%;
   }
 
