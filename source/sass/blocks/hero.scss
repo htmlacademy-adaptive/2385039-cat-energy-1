@@ -60,11 +60,6 @@
   margin: 0 auto;
   padding: 10px 45px;
   width: 280px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -108,7 +103,6 @@
     margin-left: 90px;
     padding: 14px 26px;
     width: 244px;
-    height: 54px;
     z-index: 0;
     order: 0;
     position: relative;
@@ -168,7 +162,6 @@
     padding: 15px 25px;
     padding-right: 22px;
     width: 244px;
-    height: 54px;
     font-size: 20px;
     line-height: 26px;
     order: 2;
