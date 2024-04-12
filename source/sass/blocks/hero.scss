@@ -25,7 +25,7 @@
       #505155,
       #444347
     );
-  z-index: 0;
+  z-index: -1;
 }
 
 .hero__slogan {
@@ -40,7 +40,6 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 320px;
 }
 
 .hero__image-wrapper {
@@ -61,11 +60,6 @@
   margin: 0 auto;
   padding: 10px 45px;
   width: 280px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -109,7 +103,6 @@
     margin-left: 90px;
     padding: 14px 26px;
     width: 244px;
-    height: 54px;
     z-index: 0;
     order: 0;
     position: relative;
@@ -133,13 +126,13 @@
         rgb(104 183 56 / 0.85),
         rgb(104 183 56 / 0.85)
       ),
-      url("../img/hero/hero-background-tablet.jpg") no-repeat 0 / contain,
+      url("../img/hero/hero-background-desktop.jpg") no-repeat 0 / contain,
       linear-gradient(
         to right,
         #505155,
         #444347
       );
-    width: calc(50vw + 720px);
+    width: calc(50vw);
     height: 694px;
     top: -148px;
     left: 50%;
@@ -169,7 +162,6 @@
     padding: 15px 25px;
     padding-right: 22px;
     width: 244px;
-    height: 54px;
     font-size: 20px;
     line-height: 26px;
     order: 2;

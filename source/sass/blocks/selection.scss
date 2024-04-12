@@ -184,6 +184,8 @@
 
 .selection__additionally-input,
 .selection__additionally-input:checked {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   outline: 1px solid #cdcdcd;
   width: 30px;
@@ -266,19 +268,8 @@
 .selection__form-description--error {
   outline: 2px solid #ff8282;
   border: none;
-
-  .selection__form-email::after {
-    content: "";
-    position: absolute;
-    mask-image: url("../img/icons/stack.svg#email-vector-error");
-    mask-repeat: no-repeat;
-    width: 17px;
-    height: 13px;
-    right: 15px;
-    mask-position: center;
-    background-color: #ff8282;
-  }
 }
+
 
 .selection__form-phone {
   column-gap: 11px;
@@ -342,10 +333,10 @@
   margin: 0;
   margin-top: 8px;
   margin-bottom: 21px;
-  padding: 0;
+  padding: 10px 0;
   width: 280px;
-  height: 40px;
   border: none;
+  box-sizing: border-box;
 }
 
 .selection__span {
@@ -552,8 +543,8 @@
 
   .selection__button {
     margin-bottom: 0;
+    padding: 14px 65px;
     width: 285px;
-    height: 54px;
   }
 
   .selection__span {
@@ -668,8 +659,8 @@
 
   .selection__button {
     margin-bottom: 0;
+    padding: 14px 208px;
     width: 571px;
-    height: 54px;
   }
 
   .selection__span {
